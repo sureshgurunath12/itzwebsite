@@ -1,8 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 
-function About() {
-  
+function HomeContent() {
   return (
     <div className="about">
       <div className="container-fluid">
@@ -33,15 +32,12 @@ function About() {
               home that is personal to you when you walk in.
               <br />
               <br />
-              
             </div>
-          
-        </div>
-
           </div>
         </div>
       </div>
+    </div>
   );
 }
 
-export default About;
+export default HomeContent;
