@@ -5,12 +5,6 @@ const Home = () => {
   return (
     <>
       <Home />
-      <ShopCategory />
-      <ShopCollections />
-      <Featured />
-      <VirtualConsultant />
-      <Instagram />
-      <VideoContent />
     </>
   );
 };
