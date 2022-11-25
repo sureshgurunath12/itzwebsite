@@ -1,0 +1,65 @@
+.press .grid {
+  display: block;
+  border: #c2c2c2 1px solid;
+  height: 470px;
+  padding: 20px;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+.press .grid img {
+  display: block;
+  max-width: 100%;
+  height: 360px;
+  width: 100%;
+}
+.press .article-name {
+  text-transform: uppercase;
+  color: #2d2d2d;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.press .article-date {
+  font-size: 12px;
+  color: #2d2d2d;
+  padding-bottom: 10px;
+}
+.press .caption {
+  display: none;
+}
+.press .grid:hover .caption {
+  display: block;
+}
+.press .caption {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: showModel 1s ease-in-out forwards;
+}
+.press .caption-text {
+  display: flex;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+.press .read-article {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-family: graphikmedium;
+}
+.press .title-sub-txt {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+  text-align: center;
+  color: #514d4d;
+  margin-bottom: 20px;
+}

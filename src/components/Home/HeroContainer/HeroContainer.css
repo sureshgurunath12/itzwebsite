@@ -1,0 +1,45 @@
+.carousel-inner .carousel-item img {
+  height: 600px;
+  width: 100%;
+}
+.carousel-inner .carousel-item {
+  width: 100%;
+  object-fit: cover;
+  transition: 2s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+/*.carousel-inner .carousel-item:hover {
+  transform: scale(1.1);
+}*/
+.heroContainer .carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.heroContainer .carousel-indicators {
+  justify-content: left;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.heroContainer .carousel-indicators button.active {
+  background-color: #fff;
+}
+/* Tab Device */
+@media (max-width: 1199px) {
+  .heroContainer {
+    margin-bottom: 0px;
+  }
+  .carousel-inner .carousel-item img {
+    height: 420px;
+  }
+}
+/* Mobile Device */
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item img {
+    height: 607px;
+  }
+}

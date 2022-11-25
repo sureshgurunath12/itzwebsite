@@ -1,0 +1,50 @@
+.collectionsContainer {
+  background: #f4f4f4;
+  padding: 0px 0px 10px;
+  margin-bottom: 30px;
+  box-shadow: rgb(100 100 111 / 14%) 0px 7px 29px 0px;
+}
+
+.collectionsContainer .squareCarousel,
+.collectionsContainer .mob-squareCarousel {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.collectionsContainer .square {
+  text-align: center;
+  padding: 20px;
+}
+.square img {
+  width: 90%;
+  height: 300px;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.square img:hover {
+  opacity: 0.6;
+}
+.collectionsContainer .name {
+  color: #716c6c;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Mobile Device */
+@media (max-width: 767px) {
+  .collectionsContainer .square {
+    padding: 0px;
+  }
+  .square img {
+    width: 94%;
+    height: 200px;
+  }
+  .square img:hover {
+    opacity: 1;
+  }
+  .collectionsContainer .squareCarousel,
+  .collectionsContainer .mob-squareCarousel {
+    width: 96%;
+  }
+}

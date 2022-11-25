@@ -1,0 +1,55 @@
+.formFields {
+  text-align: left;
+}
+.formFields input,
+.formFields textarea {
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #85929e;
+  border: 1px solid #ddc9a2;
+  padding-left: 10px;
+}
+.formFields textarea {
+  height: 80px;
+  padding-top: 10px;
+}
+.formFields .sub-btn {
+  height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #c0953e;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 0.23px;
+  line-height: 15px;
+  text-align: center;
+  outline: none;
+  font-family: graphikmedium;
+  transition: all 0.5s ease-in;
+}
+.formFields .sub-btn:hover {
+  opacity: 0.8;
+}
+.formFields label {
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+.formFields label sup {
+  color: red;
+}
+
+.formFields .error {
+  padding: 1px 0px;
+  font-size: 11px;
+  height: 20px;
+}
+.successMess {
+  color: green;
+  text-align: center;
+  line-height: 30px;
+  padding: 20px 0px;
+}

@@ -1,0 +1,39 @@
+.featured-container {
+  width: 90%;
+  margin: 0 auto 10px;
+}
+.featured-list {
+  text-align: center;
+}
+.featured-list .circleCarousel {
+  width: 96%;
+}
+.featured-list img {
+  width: 260px;
+}
+.featured-list .react-multi-carousel-item {
+  display: flex;
+}
+.featured-list .react-multi-carousel-track {
+  margin-bottom: 30px;
+}
+
+#root .react-multiple-carousel__arrow--right,
+#root .react-multiple-carousel__arrow--left {
+  background: transparent;
+  color: #000;
+}
+.react-multiple-carousel__arrow--left::before,
+.react-multiple-carousel__arrow--right::before {
+  color: #000;
+}
+.featured-list .react-multiple-carousel__arrow--right,
+.featured-list .react-multiple-carousel__arrow--left {
+  top: 25px;
+}
+/* Mobile Device */
+@media (max-width: 767px) {
+  .featured-list img {
+    width: 160px;
+  }
+}
