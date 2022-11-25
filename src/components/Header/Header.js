@@ -2,11 +2,6 @@ import Logo from "../../assets/images/logo.png";
 import "./Header.css";
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import classNames from "classnames";
-import { CategoryArray } from "../../data/Category";
-import { collectionArray } from "../../data/Productdata/Collection";
-import Modal from "../../components/Registration/Registration.js";
-const collArr = collectionArray[0];
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,10 +32,10 @@ function Header() {
           Silver Furniture | Luxury Furniture India , <span>Visit Us Now!</span>
         </div>
         <div className="logoContainer">
-          <a href="https://khenshu.com/" className="logo">
+          <a href="/" className="logo">
             <img src={Logo} alt="travel_suitcase" />
           </a>
-          <div className="nav-bar" onClick={() => setIsOpen(!isOpen)}>
+          <div className="nav-bar">
             <svg
               width="30px"
               height="20px"
@@ -60,7 +55,7 @@ function Header() {
               </g>
             </svg>
           </div>
-          <div className={classNames("navContainer", isOpen ? "active" : "")}>
+          <div>
             <nav className="navigation" data-action="navigation">
               <ul className="parent">
                 <li>
@@ -75,11 +70,6 @@ function Header() {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    className={classNames(
-                      "nav-link dropdown-toggle",
-                      location.pathname.indexOf("collections/all") != -1 &&
-                        "active"
-                    )}
                     href="/beta/collections/all"
                   >
                     Category
@@ -87,33 +77,12 @@ function Header() {
                   <ul className="dropdown-menu" aria-labelledby="category">
                     <li>
                       <a
-                        className={classNames(
-                          "dropdown-item",
-                          location.pathname.indexOf("category/all") != -1 &&
-                            "active"
-                        )}
                         href="/beta/category/all"
                       >
                         All
                       </a>
                     </li>
-                    {CategoryArray.map((Category, index) => {
-                      return (
-                        <li key={Category.id}>
-                          <a
-                            className={classNames(
-                              "dropdown-item",
-                              location.pathname.indexOf(
-                                "category/" + Category.id
-                              ) != -1 && "active"
-                            )}
-                            href={"/beta/category/" + Category.id}
-                          >
-                            {Category.title}
-                          </a>
-                        </li>
-                      );
-                    })}
+                    
                   </ul>
                 </li>
                 <li>
@@ -122,53 +91,13 @@ function Header() {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    className={classNames(
-                      "nav-link dropdown-toggle",
-                      location.pathname.indexOf("collections/collections") !=
-                        -1 && "active"
-                    )}
+                   
                     href="/beta/collections"
                   >
                     <span>collections</span>
                   </a>
-                  <ul className="dropdown-menu" aria-labelledby="collections">
-                    {Object.keys(collArr).map((key) => {
-                      return (
-                        <li key={key}>
-                          <a
-                            className={
-                              location.pathname.indexOf("collections/all") !=
-                                -1 && "active"
-                            }
-                            href={"/beta/collections/" + key}
-                          >
-                            {collArr[key].title}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
                 </li>
-                <li>
-                  <a
-                    className={
-                      location.pathname.indexOf("blog") != -1 && "active"
-                    }
-                    href="/beta/blog"
-                  >
-                    <span>Blog</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className={
-                      location.pathname.indexOf("press") != -1 && "active"
-                    }
-                    href="/beta/press"
-                  >
-                    <span>Press</span>
-                  </a>
-                </li>
+                
                 <li>
                   <a
                     className={
@@ -189,37 +118,7 @@ function Header() {
                     <span>About Us</span>
                   </a>
                 </li>
-                <li
-                  className="news-letter hide"
-                  onClick={() => setIsModalOpen(!isModalOpen)}
-                >
-                  <span>NEWSLETTER</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
-                    viewBox="0 0 32 32"
-                  >
-                    <g fill="none" fillRule="evenodd">
-                      <g fill="#3B5998">
-                        <g>
-                          <g>
-                            <g>
-                              <g>
-                                <g>
-                                  <path
-                                    d="M28.8 4.8C30.567 4.8 32 6.233 32 8v16c0 1.767-1.433 3.2-3.2 3.2H3.2C1.433 27.2 0 25.767 0 24V8c0-1.767 1.433-3.2 3.2-3.2h25.6zm.8 3.73L15.782 19.592 2.4 8.618V24c0 .393.283.72.656.787l.144.013h25.6c.393 0 .72-.283.787-.656L29.6 24V8.53zM27.422 7.2H4.456l11.342 9.302L27.422 7.2z"
-                                    transform="translate(-590 -7020) translate(0 1229) translate(0 3700) translate(120 2027) translate(404 44) translate(66 20)"
-                                  ></path>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </li>
+               
               </ul>
             </nav>
             <div className="v-center hide">
