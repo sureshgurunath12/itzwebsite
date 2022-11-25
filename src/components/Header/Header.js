@@ -1,8 +1,8 @@
-import Logo from "../../assets/images/logo.png";
-import "./Header.css";
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
+import "./Header.css";
+import Logo from "../../assets/images/logo.png";
+import Logo2 from "../../assets/images/logo2.png";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -28,9 +28,9 @@ function Header() {
   return (
     <>
       <header>
-        <div className="sticky-header">
+        {/* <div className="sticky-header">
           Silver Furniture | Luxury Furniture India , <span>Visit Us Now!</span>
-        </div>
+        </div> */}
         <div className="logoContainer">
           <a href="/" className="logo">
             <img src={Logo} alt="travel_suitcase" />
@@ -56,7 +56,13 @@ function Header() {
             </svg>
           </div>
           <div>
-            <nav className="navigation" data-action="navigation">
+          <a href="/" className="logo">
+            <img src={Logo2} alt="Konami" />
+          </a>
+          </div>
+        </div>
+        <div className="navContainer">
+        <nav className="navigation" data-action="navigation">
               <ul className="parent">
                 <li>
                   <a className="" href="/beta">
@@ -121,15 +127,6 @@ function Header() {
                
               </ul>
             </nav>
-            <div className="v-center hide">
-              <button
-                className="register"
-                onClick={() => setIsModalOpen(!isModalOpen)}
-              >
-                Register/Sign In
-              </button>
-            </div>
-          </div>
         </div>
         {showTopBtn && (
           <span className="up-arrow-circle" onClick={scrollToTop}>
