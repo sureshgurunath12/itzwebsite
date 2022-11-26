@@ -30,7 +30,7 @@ function Header() {
       <header>
         <div className="container">
           <div className="logoContainer">
-            <a href="/" className="logo">
+            <a href="/" className="left-logo">
               <img src={Logo} alt="travel_suitcase" />
             </a>
             <div className="nav-bar">
@@ -53,17 +53,19 @@ function Header() {
                 </g>
               </svg>
             </div>
-            <div>
-              <a href="/" className="logo">
+
+            <div className="right-logoContainer">
+              <a href="/" className="right-logo">
                 <img src={Logo2} alt="Konami" />
               </a>
+              <span>Subsidiary of Konami Gaming</span>
             </div>
           </div>
           <div className="navContainer">
             <nav className="navigation" data-action="navigation">
               <ul className="parent">
                 <li>
-                  <a className="" href="/beta">
+                  <a className="active" href="/beta">
                     <span>Home</span>
                   </a>
                 </li>
@@ -76,7 +78,7 @@ function Header() {
                     aria-expanded="false"
                     href="/beta/collections/all"
                   >
-                    Category
+                    <span>Category</span>
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="category">
                     <li>
@@ -118,6 +120,10 @@ function Header() {
                 </li>
               </ul>
             </nav>
+            <div className="contactContainer">
+              <div className="contact">+91 9940698229</div>
+              <div className="email">hr@itechnowizsolutions.com</div>
+            </div>
           </div>
           {showTopBtn && (
             <span className="up-arrow-circle" onClick={scrollToTop}>

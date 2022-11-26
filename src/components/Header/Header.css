@@ -37,7 +37,7 @@ header nav {
 }
 header .navigation ul.parent {
   padding: 0;
-  margin: 0;
+  margin: 0 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -45,9 +45,8 @@ header .navigation ul.parent li {
   list-style-type: none;
   text-transform: uppercase;
   font-family: "graphikregular";
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 2px;
-  height: 60px;
 }
 header .navigation ul.parent li.news-letter {
   display: flex;
@@ -62,11 +61,12 @@ header .navigation ul.parent li.news-letter span {
 header .navigation ul.parent li a {
   text-decoration: none;
   display: block;
-  padding: 19px 30px 18px;
+  padding: 5px 10px 5px;
   color: #b4975a;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
 ul.dropdown-menu {
   border: 1px solid rgba(255, 255, 255, 0.05);
   width: 188px;
@@ -81,19 +81,37 @@ header .navigation ul.dropdown-menu li {
 header .navigation ul.dropdown-menu li a {
   padding: 8px 20px 8px;
 }
-header .navigation ul.parent li a.active,
-header .navigation ul.parent li a:hover {
-  background-color: #efe8dae6;
-  color: #000;
+header .navigation ul.parent li a.active span,
+header .navigation ul.parent li a:hover span {
+  color: #ff8000;
+  border-bottom: 1px solid #ff8000;
 }
 
-header .logo {
+header .left-logo {
   height: 58px;
   display: flex;
   place-items: center;
 }
-header .logo img {
-  width: 190px;
+header .right-logoContainer {
+  padding-top: 10px;
+  text-align: right;
+}
+header .right-logo {
+  display: block;
+  line-height: normal;
+}
+header .right-logoContainer span {
+  color: #a8a8a8;
+  font-size: 12px;
+}
+.contactContainer {
+  display: flex;
+  color: #656565;
+  font-size: 12px;
+}
+.contactContainer .contact {
+  white-space: nowrap;
+  padding-right: 10px;
 }
 header .nav-bar {
   display: none;
@@ -181,9 +199,6 @@ header button.register:hover {
     height: 60px;
   }
   header .logo a {
-    height: 60px;
-  }
-  header .logo img {
     height: 60px;
   }
 }

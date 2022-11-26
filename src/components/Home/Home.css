@@ -1,3 +1,11 @@
+.title {
+  font-size: 48px;
+}
 .hero-container img {
   width: 100%;
+}
+.font-italic-txt {
+  font-style: italic;
+  font-size: 36px;
+  padding-bottom: 20px;
 }
