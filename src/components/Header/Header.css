@@ -154,6 +154,9 @@ header button.register:hover {
   place-items: center;
 }
 @media (max-width: 1200px) {
+  header {
+    padding: 2px 0px;
+  }
   header nav {
     display: flex;
     width: 60%;

@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Carousel from "react-bootstrap/Carousel";
 import Content from "./Content/Content";
-import { isMobile } from "react-device-detect";
+import { isDesktop } from "react-device-detect";
 
 function HomeContent() {
   const MobBanners = [
@@ -17,7 +17,7 @@ function HomeContent() {
     cdnURL + "assets/images/desktopbanner3.png",
     cdnURL + "assets/images/desktopbanner4.png",
   ];
-  if (isMobile) {
+  if (isDesktop) {
     return (
       <>
         <div className="container-fluid hero-container">
@@ -27,11 +27,11 @@ function HomeContent() {
             controls={true}
             indicators={true}
           >
-            {MobBanners.map((MobBanners, index) => {
+            {DesktopBanners.map((DesktopBanners, index) => {
               return (
                 <Carousel.Item>
-                  <div key={MobBanners}>
-                    <img src={MobBanners} alt="travel_suitcase" />
+                  <div key={DesktopBanners}>
+                    <img src={DesktopBanners} alt="travel_suitcase" />
                   </div>
                 </Carousel.Item>
               );
@@ -42,6 +42,7 @@ function HomeContent() {
       </>
     );
   }
+
   return (
     <>
       <div className="container-fluid hero-container">
@@ -51,11 +52,11 @@ function HomeContent() {
           controls={true}
           indicators={true}
         >
-          {DesktopBanners.map((DesktopBanners, index) => {
+          {MobBanners.map((MobBanners, index) => {
             return (
               <Carousel.Item>
-                <div key={DesktopBanners}>
-                  <img src={DesktopBanners} alt="travel_suitcase" />
+                <div key={MobBanners}>
+                  <img src={MobBanners} alt="travel_suitcase" />
                 </div>
               </Carousel.Item>
             );
