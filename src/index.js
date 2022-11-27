@@ -13,7 +13,7 @@ ReactDOM.render(
     <Header />
     <main>
       <Routes>
-        <Route path="/beta" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/beta/about" element={<About />} />
         <Route path="/beta/contact" element={<Contact />} />
       </Routes>

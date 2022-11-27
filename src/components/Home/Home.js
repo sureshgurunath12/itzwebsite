@@ -1,11 +1,39 @@
 import React from "react";
 import "./Home.css";
+import Carousel from "react-bootstrap/Carousel";
 function HomeContent() {
-  const Banner = cdnURL + "assets/images/banner.jpeg";
+  const Banner = cdnURL + "assets/images/desktopbanner1.png";
+  const MobBanners = [
+    cdnURL + "assets/images/mobilebanner1.png",
+    cdnURL + "assets/images/mobilebanner2.png",
+    cdnURL + "assets/images/mobilebanner3.png",
+    cdnURL + "assets/images/mobilebanner4.png",
+  ];
+  const DesktopBanners = [
+    cdnURL + "assets/images/desktopbanner1.png",
+    cdnURL + "assets/images/desktopbanner2.png",
+    cdnURL + "assets/images/desktopbanner3.png",
+    cdnURL + "assets/images/desktopbanner4.png",
+  ];
   return (
     <>
       <div className="container-fluid hero-container">
-        <img src={Banner} alt="travel_suitcase" />
+        <Carousel
+          interval={10000}
+          autoPlay={true}
+          controls={true}
+          indicators={true}
+        >
+          {DesktopBanners.map((DesktopBanners, index) => {
+            return (
+              <Carousel.Item>
+                <div key={DesktopBanners}>
+                  <img src={DesktopBanners} alt="travel_suitcase" />
+                </div>
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
       </div>
       <div className="container">
         <div className="row">

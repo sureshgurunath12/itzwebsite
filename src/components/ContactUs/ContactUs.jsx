@@ -44,7 +44,7 @@ function ContactUs({ handler }) {
                             height="24"
                             viewBox="0 0 32 32"
                           >
-                            <g fill="none" fillRule="evenodd">
+                            <g fill="none" fill-rule="evenodd">
                               <g fill="#3B5998">
                                 <g>
                                   <g>
@@ -81,14 +81,14 @@ function ContactUs({ handler }) {
                           >
                             <g
                               stroke="none"
-                              strokeWidth="1"
+                              stroke-width="1"
                               fill="none"
-                              fillRule="evenodd"
+                              fill-rule="evenodd"
                             >
                               <g
                                 transform="translate(-144.000000, -7008.000000)"
                                 fill="#3B5998"
-                                fillRule="nonzero"
+                                fill-rule="nonzero"
                               >
                                 <g
                                   id="Group-16"
