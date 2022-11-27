@@ -91,7 +91,7 @@ function Header() {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    href="/beta/collections/all"
+                    href="/collections/all"
                   >
                     <span>Category</span>
                   </a>
@@ -102,7 +102,7 @@ function Header() {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    href="/beta/collections"
+                    href="/collections"
                   >
                     <span>collections</span>
                   </a>
@@ -113,7 +113,7 @@ function Header() {
                     className={
                       location.pathname.indexOf("contact") != -1 && "active"
                     }
-                    href="/beta/contact"
+                    href="/contact"
                   >
                     <span>Contact Us</span>
                   </a>
