@@ -72,10 +72,7 @@ function Header() {
           </div>
           <div className={classNames("navContainer", isOpen ? "active" : "")}>
             <nav className="navigation" data-action="navigation">
-              <span
-                class="model-close d-sm-none"
-                onClick={() => setIsOpen(!isOpen)}
-              >
+              <span className="model-close" onClick={() => setIsOpen(!isOpen)}>
                 X
               </span>
               <ul className="parent">

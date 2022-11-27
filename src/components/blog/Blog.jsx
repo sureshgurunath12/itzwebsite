@@ -26,11 +26,13 @@ function Blog() {
             {DesktopBanners.map((DesktopBanners, index) => {
               return (
                 <Carousel.Item>
-                  <div class="blog-editorial">
-                    <div class="editorial__content">
+                  <div className="blog-editorial">
+                    <div className="editorial__content">
                       <div className="editorial__content_inner">
-                        <p class="editorial__subheading caps">Featured post</p>
-                        <h2 class="editorial__title">
+                        <p className="editorial__subheading caps">
+                          Featured post
+                        </p>
+                        <h2 className="editorial__title">
                           <a
                             href="/blogs/blogs/an-ode-to-preserving-summer"
                             title="<h1>An Ode to Preserving Summer</h1>"
@@ -39,13 +41,13 @@ function Blog() {
                             <h1>An Ode to Preserving Summer</h1>
                           </a>
                         </h2>
-                        <h3 class="editorial__meta">
+                        <h3 className="editorial__meta">
                           <time datetime="July 29, 2021">
                             July 29, 2021 &nbsp;{" "}
                           </time>
                           <span>By Ikai Asai </span>
                         </h3>
-                        <div class="editorial__excerpt">
+                        <div className="editorial__excerpt">
                           <p>
                             A bazaar painted by myriad shades of yellow. A crate
                             of fresh mangoes sent over by the&nbsp;neighbour. An
@@ -53,7 +55,7 @@ function Blog() {
                             tart fruit. Sticky corners of a mouth. Long...
                           </p>
                         </div>
-                        <p class="article__link">
+                        <p className="article__link">
                           <a
                             href="/blogs/blogs/an-ode-to-preserving-summer"
                             tabindex="0"
@@ -63,7 +65,7 @@ function Blog() {
                         </p>
                       </div>
                     </div>
-                    <div class="editorial__image">
+                    <div className="editorial__image">
                       <img
                         key={DesktopBanners.id}
                         className=""
