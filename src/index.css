@@ -65,9 +65,6 @@ main {
 }
 
 @media (max-width: 1199px) {
-  .hide {
-    display: none;
-  }
   main {
     margin-top: 50px;
   }

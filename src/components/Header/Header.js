@@ -72,7 +72,10 @@ function Header() {
           </div>
           <div className={classNames("navContainer", isOpen ? "active" : "")}>
             <nav className="navigation" data-action="navigation">
-              <span class="model-close" onClick={() => setIsOpen(!isOpen)}>
+              <span
+                class="model-close d-sm-none"
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 X
               </span>
               <ul className="parent">
@@ -127,7 +130,7 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <div className="contactContainer hide">
+            <div className="contactContainer">
               <div className="contact">
                 <svg
                   width="14px"

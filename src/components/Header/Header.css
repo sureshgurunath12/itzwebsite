@@ -32,18 +32,12 @@ header .navContainer {
 }
 header nav {
   display: flex;
-  width: 60%;
-  background: #000;
-  height: 100%;
-  padding-top: 50px;
-  position: inherit;
-  left: 0;
+  width: 100%;
+  background: #fff;
+  position: relative;
 }
 header nav .model-close {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  cursor: pointer;
+  display: none;
 }
 header .navigation ul.parent {
   padding: 0;
@@ -160,10 +154,26 @@ header button.register:hover {
   place-items: center;
 }
 @media (max-width: 1200px) {
+  header nav {
+    display: flex;
+    width: 60%;
+    background: #000;
+    height: 100%;
+    padding-top: 50px;
+    position: inherit;
+    left: 0;
+  }
+  header nav .model-close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    display: block;
+  }
   header .navContainer {
     position: absolute;
     top: 0px;
-    left: -420px;
+    left: -1420px;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease-in;
@@ -206,6 +216,9 @@ header button.register:hover {
   }
   .news-letter {
     display: none !important;
+  }
+  .contactContainer {
+    display: none;
   }
 }
 @keyframes navBar {
