@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./Header.css";
-import Logo from "../../assets/images/logo.png";
-import Logo2 from "../../assets/images/logo2.png";
+
 function Header() {
+  const Logo = cdnURL + "assets/images/logo.png";
+  const Logo2 = cdnURL + "assets/images/logo2.png";
   const [isOpen, setIsOpen] = useState(false);
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
