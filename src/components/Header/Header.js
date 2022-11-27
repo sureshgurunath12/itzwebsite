@@ -77,52 +77,33 @@ function Header() {
               </span>
               <ul className="parent">
                 <li>
-                  <a className="active" href="/">
+                  <a className="" href="/">
                     <span>Home</span>
                   </a>
                 </li>
-
-                <li className="nav-item dropdown">
-                  <a
-                    id="category"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    href="/collections/all"
-                  >
-                    <span>Category</span>
-                  </a>
-                </li>
                 <li>
-                  <a
-                    id="collections"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    href="/collections"
-                  >
-                    <span>collections</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className={
-                      location.pathname.indexOf("contact") != -1 && "active"
-                    }
-                    href="/contact"
-                  >
-                    <span>Contact Us</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className={
-                      location.pathname.indexOf("about") != -1 && "active"
-                    }
-                    href="/beta/about"
-                  >
+                  <a className={location.pathname.indexOf("about") != -1 && "active"} href="/about">
                     <span>About Us</span>
+                  </a>
+                </li>
+                <li>
+                  <a className={location.pathname.indexOf("leadership") != -1 && "active"} href="/leadership">
+                    <span>Leadership</span>
+                  </a>
+                </li>
+                <li>
+                  <a className={location.pathname.indexOf("services") != -1 && "active"} href="/services">
+                    <span>Services</span>
+                  </a>
+                </li>
+                <li>
+                  <a className={location.pathname.indexOf("careers") != -1 && "active"} href="/careers">
+                    <span>Careers</span>
+                  </a>
+                </li>
+                <li>
+                  <a className={location.pathname.indexOf("contactus") != -1 && "active"} href="/contactus">
+                    <span>Contact Us</span>
                   </a>
                 </li>
               </ul>

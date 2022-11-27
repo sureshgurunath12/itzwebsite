@@ -69,6 +69,7 @@ main {
     margin-top: 50px;
   }
 }
+
 /* Mobile Device */
 @media (max-width: 767px) {
   main {
@@ -77,4 +78,17 @@ main {
 }
 .hide {
   display: none !important;
+}
+.foot-btn {
+  text-transform: uppercase;
+  margin: 56px auto 59px;
+  text-align: center;
+}
+.learnmore-btn {
+  color: #ffffff ;
+  background-color: #333333;
+  padding: 10px 20px 10px 20px;
+}
+a.learnmore-btn:hover{
+  color: #ffffff ;
 }

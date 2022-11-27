@@ -6,7 +6,7 @@ import "./index.css";
 
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Header, Footer, Home, About, Contact } from "./components";
+import { Header, Footer, Home, About, Contact, Leadership, Careers } from "./components";
 
 ReactDOM.render(
   <Router>
@@ -14,8 +14,10 @@ ReactDOM.render(
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/beta/about" element={<About />} />
-        <Route path="/beta/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/leadership" element={<Leadership />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
     </main>
     <Footer />

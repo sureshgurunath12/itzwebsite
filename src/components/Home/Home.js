@@ -41,31 +41,31 @@ function HomeContent() {
         <Content />
       </>
     );
+  } else {
+    return (
+      <>
+        <div className="container-fluid hero-container">
+          <Carousel
+            interval={10000}
+            autoPlay={true}
+            controls={true}
+            indicators={true}
+          >
+            {MobBanners.map((MobBanners, index) => {
+              return (
+                <Carousel.Item>
+                  <div key={MobBanners}>
+                    <img src={MobBanners} alt="travel_suitcase" />
+                  </div>
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
+        </div>
+        <Content />
+      </>
+    );
   }
-
-  return (
-    <>
-      <div className="container-fluid hero-container">
-        <Carousel
-          interval={10000}
-          autoPlay={true}
-          controls={true}
-          indicators={true}
-        >
-          {MobBanners.map((MobBanners, index) => {
-            return (
-              <Carousel.Item>
-                <div key={MobBanners}>
-                  <img src={MobBanners} alt="travel_suitcase" />
-                </div>
-              </Carousel.Item>
-            );
-          })}
-        </Carousel>
-      </div>
-      <Content />
-    </>
-  );
 }
 
 export default HomeContent;
