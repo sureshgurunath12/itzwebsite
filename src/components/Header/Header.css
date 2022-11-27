@@ -5,7 +5,6 @@ header {
   left: 0;
   z-index: 12;
   text-align: center;
-  /*background: linear-gradient(180deg, #fff 85%, transparent);*/
   background-color: #fff;
 }
 .sticky-header {
@@ -33,7 +32,18 @@ header .navContainer {
 }
 header nav {
   display: flex;
-  width: 100%;
+  width: 60%;
+  background: #000;
+  height: 100%;
+  padding-top: 50px;
+  position: inherit;
+  left: 0;
+}
+header nav .model-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
 }
 header .navigation ul.parent {
   padding: 0;
@@ -152,17 +162,33 @@ header button.register:hover {
 @media (max-width: 1200px) {
   header .navContainer {
     position: absolute;
-    top: 90px;
-    left: 0;
+    top: 0px;
+    left: -420px;
     width: 100%;
-    background: #fff;
-    display: none;
-    animation: navBar 1s ease-in-out forwards;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in;
     z-index: 10;
+    margin-top: 0;
+    color: #fff;
+    height: 100vh;
   }
   header .navContainer.active {
-    display: block;
+    left: 0;
     border-top: 1px solid #f8efdd;
+  }
+  header .navigation ul.parent li {
+    padding: 4px;
+  }
+  header .navigation ul.parent li a {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 1.4rem;
+  }
+  header .navigation ul.parent li a span,
+  header .navigation ul.parent li a.active span,
+  header .navigation ul.parent li a:hover span {
+    color: #fff;
+    border-bottom: none;
   }
   header .navigation ul {
     display: block;
@@ -171,9 +197,7 @@ header button.register:hover {
   header .nav-bar {
     display: flex;
   }
-  header .navigation ul li {
-    border-bottom: 1px solid #f8efdd;
-  }
+
   header .navigation ul.parent {
     display: block;
   }

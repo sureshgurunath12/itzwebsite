@@ -16,4 +16,7 @@
 
 /* Mobile Device */
 @media (max-width: 767px) {
+  .hero-container img {
+    height: 150px;
+  }
 }

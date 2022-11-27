@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import classNames from "classnames";
 import "./Header.css";
 
 function Header() {
@@ -32,7 +33,7 @@ function Header() {
         <div className="container">
           <div className="logo-container">
             <div className="left-logo-container">
-              <div className="nav-bar">
+              <div className="nav-bar" onClick={() => setIsOpen(!isOpen)}>
                 <svg
                   width="20px"
                   height="15px"
@@ -69,11 +70,14 @@ function Header() {
               <span>Subsidiary of Konami Gaming</span>
             </div>
           </div>
-          <div className="navContainer">
+          <div className={classNames("navContainer", isOpen ? "active" : "")}>
             <nav className="navigation" data-action="navigation">
+              <span class="model-close" onClick={() => setIsOpen(!isOpen)}>
+                X
+              </span>
               <ul className="parent">
                 <li>
-                  <a className="active" href="/beta">
+                  <a className="active" href="/">
                     <span>Home</span>
                   </a>
                 </li>
@@ -88,11 +92,6 @@ function Header() {
                   >
                     <span>Category</span>
                   </a>
-                  <ul className="dropdown-menu" aria-labelledby="category">
-                    <li>
-                      <a href="/beta/category/all">All</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a
@@ -128,7 +127,7 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <div className="contactContainer">
+            <div className="contactContainer hide">
               <div className="contact">
                 <svg
                   width="14px"

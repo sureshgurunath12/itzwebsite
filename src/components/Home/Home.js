@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import Carousel from "react-bootstrap/Carousel";
 function HomeContent() {
-  const Banner = cdnURL + "assets/images/desktopbanner1.png";
   const MobBanners = [
     cdnURL + "assets/images/mobilebanner1.png",
     cdnURL + "assets/images/mobilebanner2.png",

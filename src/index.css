@@ -68,6 +68,9 @@ main {
   .hide {
     display: none;
   }
+  main {
+    margin-top: 50px;
+  }
 }
 /* Mobile Device */
 @media (max-width: 767px) {
