@@ -1,6 +1,9 @@
 import React from "react";
 import "./Home.css";
 import Carousel from "react-bootstrap/Carousel";
+import Content from "./Content/Content";
+import { isMobile } from "react-device-detect";
+
 function HomeContent() {
   const MobBanners = [
     cdnURL + "assets/images/mobilebanner1.png",
@@ -14,6 +17,31 @@ function HomeContent() {
     cdnURL + "assets/images/desktopbanner3.png",
     cdnURL + "assets/images/desktopbanner4.png",
   ];
+  if (isMobile) {
+    return (
+      <>
+        <div className="container-fluid hero-container">
+          <Carousel
+            interval={10000}
+            autoPlay={true}
+            controls={true}
+            indicators={true}
+          >
+            {MobBanners.map((MobBanners, index) => {
+              return (
+                <Carousel.Item>
+                  <div key={MobBanners}>
+                    <img src={MobBanners} alt="travel_suitcase" />
+                  </div>
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
+        </div>
+        <Content />
+      </>
+    );
+  }
   return (
     <>
       <div className="container-fluid hero-container">
@@ -34,47 +62,7 @@ function HomeContent() {
           })}
         </Carousel>
       </div>
-      <div className="container">
-        <div className="row">
-          <br />
-          <br />
-          <h1 className="font-weight-light title">About</h1>
-          <div className="font-italic-txt">
-            The one stop solution for all Casino Floor Operations.
-          </div>
-          <div className="home-txt">
-            iTechnowiZ Solutions Private Limited is involved in developing
-            products for the Casino Gaming industry and has been set up as an
-            extension of Konami Gaming Inc headquartered in Las Vegas, Nevada,
-            USA which is a group company of Konami Holdings Corporation, Japan.
-            Konami Gaming Inc is involved in developing Casino games and Systems
-            software for management of Casinos. <br />
-            <br />
-            iTechnowiZ Solutions Private Limited is involved in developing
-            products for the Casino Gaming industry and has been set up as an
-            extension of Konami Gaming Inc headquartered in Las Vegas, Nevada,
-            USA which is a group company of Konami Holdings Corporation, Japan.
-            Konami Gaming Inc is involved in developing Casino games and Systems
-            software for management of Casinos. iTechnowiZ Solutions Private
-            Limited is involved in developing products for the Casino Gaming
-            industry and has been set up as an extension of Konami Gaming Inc
-            headquartered in Las Vegas, Nevada, USA which is a group company of
-            Konami Holdings Corporation, Japan. Konami Gaming Inc is involved in
-            developing Casino games and Systems software for management of
-            Casinos.
-            <br />
-            <br />
-            iTechnowiZ Solutions Private Limited is involved in developing
-            products for the Casino Gaming industry and has been set up as an
-            extension of Konami Gaming Inc headquartered in Las Vegas, Nevada,
-            USA which is a group company of Konami Holdings Corporation, Japan.
-            Konami Gaming Inc is involved in developing Casino games and Systems
-            software for management of Casinos.
-            <br />
-            <br />
-          </div>
-        </div>
-      </div>
+      <Content />
     </>
   );
 }
