@@ -16,10 +16,9 @@
 
 /* Mobile Device */
 @media (max-width: 767px) {
-
   .leaderItemBox {
     margin: 10px 10px 10px 10px !important;
-    width:100%
+    width: 100%;
   }
 }
 .leaderList {
@@ -28,7 +27,6 @@
 }
 .leaderItemBox {
   position: relative;
-  display: flex;
   align-content: center;
   justify-content: center;
   overflow: hidden;
@@ -36,8 +34,8 @@
   background: #fff;
 }
 .leaderItemBox div img {
-  width:315px;
-  height:250px;
+  width: 315px;
+  height: 250px;
   background-color: darkgray;
 }
 .nameBox {

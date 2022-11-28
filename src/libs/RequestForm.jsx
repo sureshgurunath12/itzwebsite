@@ -148,143 +148,153 @@ export const RequestForm = (props) => {
           <div className="news-title">{isTitle}</div>
 
           <form ref={form} onSubmit={sendEmail}>
-            {!isProductHidden ? (
-              <div className="field">
-                <div className="inputContainer">
-                  <input
-                    type="text"
-                    name="user_product"
-                    id="product_name"
-                    className="disabled"
-                    placeholder="Product Name"
-                    ref={productRef}
-                    onChange={(e) => {
-                      handleChange(e);
-                    }}
-                    onBlur={(e) => {
-                      handleChange(e);
-                    }}
-                    value={prodName}
-                  />
-                  <div className="error" style={{ color: "red" }}>
-                    {nameError ? "" : ""}
+            <div className="contact-us-container">
+              <div className="contact-us-left">
+                {!isProductHidden ? (
+                  <div className="field">
+                    <div className="inputContainer">
+                      <input
+                        type="text"
+                        name="user_product"
+                        id="product_name"
+                        className="disabled"
+                        placeholder="Product Name"
+                        ref={productRef}
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
+                        onBlur={(e) => {
+                          handleChange(e);
+                        }}
+                        value={prodName}
+                      />
+                      <div className="error" style={{ color: "red" }}>
+                        {nameError ? "" : ""}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            ) : null}
-            {!isFullNameHidden ? (
-              <div className="field">
-                <div className="inputContainer">
-                  <input
-                    type="text"
-                    name="user_name"
-                    id="user_name"
-                    placeholder="Full Name"
-                    ref={nameRef}
-                    onChange={(e) => {
-                      handleChange(e);
-                    }}
-                    onBlur={(e) => {
-                      handleChange(e);
-                    }}
-                  />
-                  <div className="error" style={{ color: "red" }}>
-                    {nameError ? "Please enter your value" : ""}
+                ) : null}
+                {!isFullNameHidden ? (
+                  <div className="field">
+                    <div className="text-container">Name</div>
+                    <div className="inputContainer">
+                      <input
+                        type="text"
+                        name="user_name"
+                        id="user_name"
+                        placeholder="Full Name"
+                        ref={nameRef}
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
+                        onBlur={(e) => {
+                          handleChange(e);
+                        }}
+                      />
+                      <div className="error" style={{ color: "red" }}>
+                        {nameError ? "Please enter your value" : ""}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            ) : null}
-            {!isEmailHidden ? (
-              <div className="field">
-                <div className="inputContainer">
-                  <input
-                    type="text"
-                    name="user_email"
-                    id="user_email"
-                    placeholder="Email Address"
-                    ref={emailRef}
-                    onBlur={(e) => {
-                      handleChange(e);
-                    }}
-                    onChange={(e) => {
-                      handleChange(e);
-                    }}
-                  />
-                  <div className="error" style={{ color: "red" }}>
-                    {emailError ? "Please enter valid email" : ""}
+                ) : null}
+                {!isEmailHidden ? (
+                  <div className="field">
+                    <div className="text-container">Email</div>
+                    <div className="inputContainer">
+                      <input
+                        type="text"
+                        name="user_email"
+                        id="user_email"
+                        placeholder="Email Address"
+                        ref={emailRef}
+                        onBlur={(e) => {
+                          handleChange(e);
+                        }}
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
+                      />
+                      <div className="error" style={{ color: "red" }}>
+                        {emailError ? "Please enter valid email" : ""}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            ) : null}
-            {!isPasswordHidden ? (
-              <div className="field">
-                <div className="inputContainer">
-                  <input
-                    type="password"
-                    name="user_password"
-                    id="user_password"
-                    placeholder="Password"
-                    ref={passwordRef}
-                    onBlur={(e) => {
-                      handleChange(e);
-                    }}
-                    onChange={(e) => {
-                      handleChange(e);
-                    }}
-                    autoComplete="off"
-                  />
-                  <div className="error" style={{ color: "red" }}>
-                    {passwordError ? "Please enter valid password" : ""}
+                ) : null}
+                {!isPasswordHidden ? (
+                  <div className="field">
+                    <div className="text-container">Name</div>
+                    <div className="inputContainer">
+                      <input
+                        type="password"
+                        name="user_password"
+                        id="user_password"
+                        placeholder="Password"
+                        ref={passwordRef}
+                        onBlur={(e) => {
+                          handleChange(e);
+                        }}
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
+                        autoComplete="off"
+                      />
+                      <div className="error" style={{ color: "red" }}>
+                        {passwordError ? "Please enter valid password" : ""}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            ) : null}
-            {!isMobileHidden ? (
-              <div className="field">
-                <div className="inputContainer">
-                  <input
-                    type="number"
-                    name="user_mobile"
-                    id="user_mobile"
-                    placeholder="Mobile"
-                    ref={mobileRef}
-                    onChange={(e) => {
-                      handleChange(e);
-                    }}
-                    maxLength="9"
-                    onBlur={(e) => {
-                      handleChange(e);
-                    }}
-                  />
-                  <div className="error" style={{ color: "red" }}>
-                    {mobileError ? "Please enter mobile number" : ""}
+                ) : null}
+                {!isMobileHidden ? (
+                  <div className="field">
+                    <div className="text-container">Mobile</div>
+                    <div className="inputContainer">
+                      <input
+                        type="number"
+                        name="user_mobile"
+                        id="user_mobile"
+                        placeholder="Mobile"
+                        ref={mobileRef}
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
+                        maxLength="9"
+                        onBlur={(e) => {
+                          handleChange(e);
+                        }}
+                      />
+                      <div className="error" style={{ color: "red" }}>
+                        {mobileError ? "Please enter mobile number" : ""}
+                      </div>
+                    </div>
                   </div>
-                </div>
+                ) : null}
               </div>
-            ) : null}
-            {!isMessageHidden ? (
-              <div className="field">
-                <div className="inputContainer">
-                  <textarea
-                    type="text"
-                    name="user_message"
-                    id="user_message"
-                    placeholder="Message"
-                    ref={messageRef}
-                    onChange={(e) => {
-                      handleChange(e);
-                    }}
-                    onBlur={(e) => {
-                      handleChange(e);
-                    }}
-                  />
-                  <div className="error" style={{ color: "red" }}>
-                    {messageError ? "" : ""}
+              <div className="contact-us-right">
+                {!isMessageHidden ? (
+                  <div className="field">
+                    <div className="text-container">Message</div>
+                    <div className="inputContainer">
+                      <textarea
+                        type="text"
+                        name="user_message"
+                        id="user_message"
+                        placeholder="Message"
+                        ref={messageRef}
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
+                        onBlur={(e) => {
+                          handleChange(e);
+                        }}
+                      />
+                      <div className="error" style={{ color: "red" }}>
+                        {messageError ? "" : ""}
+                      </div>
+                    </div>
                   </div>
-                </div>
+                ) : null}
               </div>
-            ) : null}
-
+            </div>
             <div className="field">
               <input type="submit" className="sub-btn" value="Submit" />
             </div>

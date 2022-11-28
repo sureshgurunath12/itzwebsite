@@ -31,12 +31,7 @@
   margin: 10px 15px 15px 50px;
   background: #fff;
   padding-bottom: 30px;
-  width:100%
-}
-.leaderItemBox div img {
-  width:315px;
-  height:250px;
-  background-color: darkgray;
+  width: 100%;
 }
 .nameBox {
   padding-top: 15px;

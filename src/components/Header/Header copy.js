@@ -41,7 +41,12 @@ function Header() {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                <g
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
                   <g
                     transform="translate(-320.000000, -38.000000)"
                     fill="#9a6f31"
@@ -65,27 +70,50 @@ function Header() {
             <nav className="navigation" data-action="navigation">
               <ul className="parent">
                 <li>
-                  <a className={location.pathname.indexOf("") > 1 && "active"} href="/">
+                  <a
+                    className={location.pathname.indexOf("") > 1 && "active"}
+                    href="/"
+                  >
                     <span>Home</span>
                   </a>
                 </li>
                 <li>
-                  <a className={location.pathname.indexOf("about") != -1 && "active"} href="/about">
+                  <a
+                    className={
+                      location.pathname.indexOf("about") != -1 && "active"
+                    }
+                    href="/about"
+                  >
                     <span>About Us</span>
                   </a>
                 </li>
                 <li>
-                  <a className={location.pathname.indexOf("services") != -1 && "active"} href="/services">
+                  <a
+                    className={
+                      location.pathname.indexOf("services") != -1 && "active"
+                    }
+                    href="/services"
+                  >
                     <span>Services</span>
                   </a>
                 </li>
                 <li>
-                  <a className={location.pathname.indexOf("careers") != -1 && "active"} href="/careers">
+                  <a
+                    className={
+                      location.pathname.indexOf("careers") != -1 && "active"
+                    }
+                    href="/careers"
+                  >
                     <span>Careers</span>
                   </a>
                 </li>
                 <li>
-                  <a className={location.pathname.indexOf("contactus") != -1 && "active"} href="/contactus">
+                  <a
+                    className={
+                      location.pathname.indexOf("contactus") != -1 && "active"
+                    }
+                    href="/contactus"
+                  >
                     <span>Contact Us</span>
                   </a>
                 </li>

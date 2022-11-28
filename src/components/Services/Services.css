@@ -12,36 +12,6 @@
   font-size: 1rem;
 }
 
-/* Mobile Device */
-@media (max-width: 767px) {
-
-  .leaderItemBox {
-    margin: 10px 10px 10px 10px !important;
-    width:100%;
-  }
-  .leaderItemBox div img {
-    width:100% !important;
-  }
-}
-.leaderList {
-  display: flex;
-  flex-wrap: wrap;
-}
-.leaderItemBox {
-  position: relative;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  overflow: hidden;
-  margin: 10px 15px 15px 50px;
-  background: #fff;
-  width:315px;
-}
-.leaderItemBox div img {
-  width:315px;
-  height:250px;
-  background-color: darkgray;
-}
 .nameBox {
   padding-top: 15px;
 }
