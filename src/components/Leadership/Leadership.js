@@ -9,6 +9,8 @@ function Leadership() {
   } else {
     Banner = cdnURL + "assets/images/mobilebanner3.png";
   }
+  const person =
+    "https://img.konami.com/gaming/leadership/images/SteveSutherland1.png";
   return (
     <>
       <div className="container-fluid hero-container">
@@ -38,7 +40,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. V.M.K.Gopal</h3>
@@ -51,7 +53,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Kaliyappan </h3>
@@ -64,7 +66,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Siva</h3>
@@ -81,7 +83,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. V.M.K.Gopal</h3>
@@ -94,7 +96,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Kaliyappan </h3>
@@ -107,7 +109,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Siva</h3>
@@ -124,7 +126,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. V.M.K.Gopal</h3>
@@ -137,7 +139,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Kaliyappan </h3>
@@ -150,7 +152,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Siva</h3>
@@ -167,7 +169,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. V.M.K.Gopal</h3>
@@ -180,7 +182,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Kaliyappan </h3>
@@ -193,7 +195,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Siva</h3>
@@ -210,7 +212,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. V.M.K.Gopal</h3>
@@ -223,7 +225,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Kaliyappan </h3>
@@ -236,7 +238,7 @@ function Leadership() {
                   className="button tile-action"
                   href="/gaming/leadership/steve-sutherland.html"
                 >
-                  <img src={Banner} width="313" height="250" />
+                  <img src={person} width="313" height="250" />
                 </a>
                 <div className="nameBox">
                   <h3>Mr. Siva</h3>
