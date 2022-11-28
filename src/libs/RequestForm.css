@@ -81,6 +81,16 @@ form .field {
   padding: 20px 0px;
 }
 @media (max-width: 1200px) {
+  .fields-txt {
+    padding: 0;
+  }
+  .field .text-container {
+    padding: 10px 10px 0px 0px;
+  }
+  form .field {
+    display: block;
+    margin-bottom: 0px;
+  }
   .contact-us-container {
     display: block;
   }
