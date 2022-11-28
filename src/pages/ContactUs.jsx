@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ContactUs from "../components/ContactUs/ContactUs";
-const SimpleMap = (props) => {
+const ContactUsPage = (props) => {
   return <ContactUs />;
 };
 
-export default SimpleMap;
+export default ContactUsPage;

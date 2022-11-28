@@ -59,6 +59,12 @@ ul {
   color: #000;
   letter-spacing: 0.72px;
 }
+.subtitle {
+  font-size: 2rem;
+  padding-top: 20px;
+  color: #000;
+  letter-spacing: 0.72px;
+}
 
 main {
   margin-top: 90px;
@@ -74,6 +80,9 @@ main {
 @media (max-width: 767px) {
   main {
     margin-top: 50px;
+  }
+  .hero-container img {
+    height: 150px;
   }
 }
 .hide {
@@ -91,4 +100,9 @@ main {
 }
 a.learnmore-btn:hover{
   color: #ffffff ;
+}
+
+.hero-container img {
+  height: 400px;
+  width:100%;
 }

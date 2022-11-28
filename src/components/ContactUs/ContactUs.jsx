@@ -1,25 +1,49 @@
 import React from "react";
 import "../../components/ContactUs/ContactUs.css";
 import { RequestForm } from "../../libs/RequestForm";
+import { isDesktop } from "react-device-detect";
 function ContactUs({ handler }) {
+  let Banner = cdnURL + "assets/images/desktopbanner3.png";
+    if (isDesktop) {
+       Banner = cdnURL + "assets/images/desktopbanner3.png";
+    } else {
+       Banner = cdnURL + "assets/images/mobilebanner3.png";
+    }
   return (
-    <div className="contact-us">
-      <div className="container-fluid">
+    
+    <>
+      <div className="container-fluid hero-container">
+        <img src={Banner} alt="travel_suitcase" />
+      </div>
+      <div className="container">
         <div className="row">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8 padding0">
+          <br />
+          <br />
+          <h1 className="font-weight-light title">Contact</h1>
+          <div className="contactUs-container padding0">
+              <div className="fields">
+                <RequestForm
+                  isProductHidden={true}
+                  isPasswordHidden={true}
+                  templateId="template_2jrsnqe"
+                />
+              </div>
+              <h1 className="font-weight-light title">
+              Map
+            </h1>
+          </div>
+          <div className="padding0">
+            
             <div className="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.179274061695!2d77.64640666413509!3d12.96037756863273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14067cca9bdd%3A0x111bbe37cc24e71a!2sThe%20Leela%20Palace%20Bengaluru%2C%20A%20Contemporary%20Luxury%20Hotel!5e0!3m2!1sen!2sin!4v1570271903764!5m2!1sen!2sin"
-                width="100%"
+            <iframe class="gmap_iframe" width="100%"
                 frameBorder="0"
-                allowFullScreen=""
-              ></iframe>
+                allowFullScreen="" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=iTechnowiz Solutions&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 contactUs-container">
+          <div className="contactUs-container ">
             <br />
 
-            <h1 className="font-weight-light text-center title">
+            <h1 className="font-weight-light text-left title">
               Get In Touch With Us
             </h1>
             <div className="text-center">
@@ -28,16 +52,12 @@ function ContactUs({ handler }) {
                   <div className="container-fluid">
                     <div className="row">
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                        <div className="bold upperCase our-store">
-                          Our Flagship Store
-                        </div>
-                        <div>C7, C8,Leela Galleria, </div>
-                        <div>The Leela Palace,</div>
-                        <div> Old Airport Road,</div>
-                        <div>Bengaluru -560008</div>
+                        <div>5C, Gamma Block, SSPDL -Alpha City IT Park </div>
+                        <div>OMR Road, Navalur,</div>
+                        <div> Chennai, 603103, Tamilnadu, India</div>
                       </div>
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 contactNumber bold">
-                        <div className="text-right">
+                        <div className="text-left">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -64,14 +84,14 @@ function ContactUs({ handler }) {
                             </g>
                           </svg>
                           <a
-                            href="mailto:accounts@khenshu.com"
+                            href="mailto:hr@itechnowizsolutions.com"
                             className="email-link"
                             eventname="Email"
                           >
-                            accounts@khenshu.com
+                            hr@itechnowizsolutions.com
                           </a>
                         </div>
-                        <div className="text-right">
+                        <div className="text-left">
                           <svg
                             width="20px"
                             height="22px"
@@ -106,22 +126,14 @@ function ContactUs({ handler }) {
                           </svg>
 
                           <a
-                            href="tel:+918040924923"
+                            href="tel:+919940698229"
                             className="phone-number-link"
                             eventname="Phone"
                           >
-                            +91 80-40924923
+                            +91 9940698229
                           </a>
                         </div>
-                        <div className="text-right">
-                          <a
-                            href="tel:18004196261"
-                            className="phone-number-link"
-                            eventname="Phone"
-                          >
-                            1800 419 6261
-                          </a>
-                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -129,19 +141,11 @@ function ContactUs({ handler }) {
               </div>
               <br />
               <br />
-              <div className="fields">
-                <RequestForm
-                  isProductHidden={true}
-                  isPasswordHidden={true}
-                  templateId="template_2jrsnqe"
-                />
+              </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <br />
-    </div>
+    </>
   );
 }
 

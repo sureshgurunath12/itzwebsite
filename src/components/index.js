@@ -6,3 +6,4 @@ export { default as About } from "../pages/About";
 export { default as Contact } from "../pages/ContactUs";
 export { default as Leadership } from "../pages/Leadership";
 export { default as Careers } from "../pages/Careers";
+export { default as Services } from "../pages/Services";

@@ -1,12 +1,20 @@
 import React from "react";
 import "./AboutUs.css";
-const Banner = cdnURL + "assets/images/desktopbanner2.png";
+import { isDesktop } from "react-device-detect";
+
+
 
 function AboutUs() {
+  let Banner = cdnURL + "assets/images/desktopbanner2.png";
+  if (isDesktop) {
+     Banner = cdnURL + "assets/images/desktopbanner2.png";
+  } else {
+     Banner = cdnURL + "assets/images/mobilebanner2.png";
+  }
   return (
     <>
       <div className="container-fluid hero-container">
-        <img src={Banner} alt="travel_suitcase" />
+        <img src={Banner} alt="banner" />
       </div>
       <div className="container">
         <div className="row">
