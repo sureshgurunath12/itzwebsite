@@ -5,7 +5,10 @@ header {
   left: 0;
   z-index: 12;
   text-align: center;
-  background-color: #fff;
+  background-color: #f9f9f9;
+}
+.rel {
+  position: relative;
 }
 .sticky-header {
   background: #eee7d9;
@@ -17,7 +20,7 @@ header {
   font-family: "graphikmedium";
 }
 header .logo-container {
-  padding: 0px 10px;
+  padding: 15px 10px 15px 80px;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -26,15 +29,18 @@ header .navContainer {
   display: flex;
   justify-content: center;
   font-family: "graphikmedium";
-  color: #b4975a;
   font-size: 14px;
   margin-top: 10px;
+  background-color: #fff;
+}
+header .navContainer .join-us {
+  position: absolute;
+  top: 142px;
+  right: 30px;
 }
 header nav {
-  display: flex;
-  width: 100%;
-  background: #fff;
-  position: relative;
+  display: inline-block;
+  margin: 20px auto 60px;
 }
 header nav .model-close {
   display: none;
@@ -65,12 +71,45 @@ header .navigation ul.parent li.news-letter span {
 header .navigation ul.parent li a {
   text-decoration: none;
   display: block;
-  padding: 5px 10px 5px;
+
   color: #111;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+}
+header .navigation ul.parent li a.menu {
+  transition: 0.6s;
+  width: 203px;
+  height: 56px;
 }
 
+header .navigation ul.parent li a.home {
+  background: url("../../../public/assets/images/Home.png") no-repeat;
+  width: 133px;
+}
+header .navigation ul.parent li a.services {
+  background: url("../../../public/assets/images/Services.png") no-repeat;
+  width: 161px;
+}
+header .navigation ul.parent li a.careers {
+  background: url("../../../public/assets/images/Careers.png") no-repeat;
+  width: 155px;
+}
+header .navigation ul.parent li a.contactus {
+  background: url("../../../public/assets/images/Contactus.png") no-repeat;
+  width: 205px;
+}
+header .navigation ul.parent li a.home.active,
+header .navigation ul.parent li a.home:hover {
+  background: url("../../../public/assets/images/Home_hover.png") no-repeat;
+}
+header .navigation ul.parent li a.services:hover {
+  background: url("../../../public/assets/images/Services_hover.png") no-repeat;
+}
+header .navigation ul.parent li a.careers:hover {
+  background: url("../../../public/assets/images/Careers_hover.png") no-repeat;
+}
+header .navigation ul.parent li a.contactus:hover {
+  background: url("../../../public/assets/images/Contactus_hover.png") no-repeat;
+}
 ul.dropdown-menu {
   border: 1px solid rgba(255, 255, 255, 0.05);
   width: 188px;
@@ -106,24 +145,7 @@ header .right-logo {
   display: block;
   line-height: normal;
 }
-header .right-logo-container span {
-  color: #a8a8a8;
-  font-size: 0.85rem;
-  margin-top: 5px;
-  display: block;
-}
-.contactContainer {
-  display: flex;
-  color: #656565;
-  font-size: 12px;
-  place-items: center;
-  font-family: graphikregular;
-}
-.contactContainer .contact,
-.contactContainer .email {
-  white-space: nowrap;
-  padding-right: 10px;
-}
+
 header .nav-bar {
   display: none;
   justify-content: center;
@@ -219,9 +241,6 @@ header button.register:hover {
   }
   .news-letter {
     display: none !important;
-  }
-  .contactContainer {
-    display: none;
   }
 }
 @keyframes navBar {

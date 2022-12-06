@@ -1,68 +1,52 @@
 import React from "react";
 import "./Home.css";
-import Carousel from "react-bootstrap/Carousel";
-import Content from "./Content/Content";
 import { isDesktop } from "react-device-detect";
 
 function HomeContent() {
-  const MobBanners = [
-    cdnURL + "assets/images/mobilebanner1.png",
-    cdnURL + "assets/images/mobilebanner2.png",
-    cdnURL + "assets/images/mobilebanner3.png",
-    cdnURL + "assets/images/mobilebanner4.png",
-  ];
-  const DesktopBanners = [
-    cdnURL + "assets/images/desktopbanner1.png",
-    cdnURL + "assets/images/desktopbanner2.png",
-    cdnURL + "assets/images/desktopbanner3.png",
-    cdnURL + "assets/images/desktopbanner4.png",
-  ];
+  const hero = cdnURL + "assets/images/Create_innovate_inspire.png";
   if (isDesktop) {
     return (
       <>
-        <div className="container-fluid hero-container">
-          <Carousel
-            interval={10000}
-            autoPlay={true}
-            controls={true}
-            indicators={true}
-          >
-            {DesktopBanners.map((DesktopBanners, index) => {
-              return (
-                <Carousel.Item>
-                  <div key={DesktopBanners}>
-                    <img src={DesktopBanners} alt="travel_suitcase" />
-                  </div>
-                </Carousel.Item>
-              );
-            })}
-          </Carousel>
+        <div className="container-fluid">
+          <div className="hero-container">
+            <div className="container flex">
+              <div className="hero-img">
+                <img
+                  src={hero}
+                  width={605}
+                  height={600}
+                  alt="travel_suitcase"
+                />
+              </div>
+              <div className="hero-txt">
+                <div className="hero-title">
+                  The one stop solution for all Casino Floor Operations.
+                  <br />
+                  <br />
+                </div>
+                <div className="hero-description">
+                  iTechnowiZ Solutions Private Limited is involved in developing
+                  products for the Casino Gaming industry and has been set up as
+                  an extension of Konami Gaming Inc headquartered in Las Vegas,
+                  Nevada, USA which is a group company of Konami Holdings
+                  Corporation, Japan. Konami Gaming Inc is involved in
+                  developing Casino games and Systems software for management of
+                  Casinos.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <Content />
+        <br />
+        <br />
       </>
     );
   } else {
     return (
       <>
         <div className="container-fluid hero-container">
-          <Carousel
-            interval={10000}
-            autoPlay={true}
-            controls={true}
-            indicators={true}
-          >
-            {MobBanners.map((MobBanners, index) => {
-              return (
-                <Carousel.Item>
-                  <div key={MobBanners}>
-                    <img src={MobBanners} alt="travel_suitcase" />
-                  </div>
-                </Carousel.Item>
-              );
-            })}
-          </Carousel>
+          <img src={hero} alt="travel_suitcase" />
         </div>
-        <Content />
       </>
     );
   }

@@ -1,4 +1,32 @@
 @font-face {
+  font-family: "courierprimebold";
+  src: url("graphic-fonts/CourierPrime-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "courierprimeregular";
+  src: url("graphic-fonts/CourierPrime-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "courierprimeitalic";
+  src: url("graphic-fonts/CourierPrime-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "courierprimebolditalic";
+  src: url("graphic-fonts/CourierPrime-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "graphikbold";
   src: url("graphic-fonts/Graphik-Bold.otf");
   src: url("graphic-fonts/Graphik-Bold.eot");
@@ -54,7 +82,7 @@
   src: url("graphic-fonts/Graphik-Regular.eot?#iefix")
       format("embedded-opentype"),
     url("graphic-fonts/Graphik-Regular.woff") format("woff"),
-    url("graphic-fonts/Graphik-Regular.ttf") format("truetype"),
+    url("graphic-fonts/CourierPrime-Bold.ttf") format("truetype"),
     url("graphic-fonts/Graphik-Regular.svg#graphikregular") format("svg");
   font-weight: normal;
   font-style: normal;

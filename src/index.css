@@ -11,7 +11,7 @@ body {
   max-width: 100%;
   padding: 0px;
   margin: 0;
-  font-family: graphikregular;
+  font-family: courierprimeregular;
   color: #111111;
   font-size: 10px;
 }
@@ -67,12 +67,12 @@ ul {
 }
 
 main {
-  margin-top: 90px;
+  margin-top: 150px;
 }
 
 @media (max-width: 1199px) {
   main {
-    margin-top: 50px;
+    margin-top: 150px;
   }
 }
 
@@ -80,9 +80,6 @@ main {
 @media (max-width: 767px) {
   main {
     margin-top: 50px;
-  }
-  .hero-container img {
-    height: 150px;
   }
 }
 .hide {
@@ -94,15 +91,10 @@ main {
   text-align: center;
 }
 .learnmore-btn {
-  color: #ffffff ;
+  color: #ffffff;
   background-color: #333333;
   padding: 10px 20px 10px 20px;
 }
-a.learnmore-btn:hover{
-  color: #ffffff ;
-}
-
-.hero-container img {
-  height: 400px;
-  width:100%;
+a.learnmore-btn:hover {
+  color: #ffffff;
 }
