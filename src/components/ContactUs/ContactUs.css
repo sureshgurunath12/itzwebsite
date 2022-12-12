@@ -14,7 +14,7 @@
   border-radius: 4px;
   border: #c2c2c2 1px solid;
   box-shadow: rgb(100 100 111 / 14%) 0px 7px 29px 0px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .fields-txt {
   padding: 10px 10px;
@@ -22,7 +22,6 @@
 .contact-us-txt {
   width: 100%;
   margin: 0 auto;
-  font-family: "graphikregular";
   text-align: left;
 }
 .contact-us-txt .fields {
@@ -31,7 +30,6 @@
   padding: 20px 0px;
 }
 .bold {
-  font-family: graphikmedium;
 }
 .upperCase {
   text-transform: uppercase;
@@ -63,7 +61,6 @@
 .get-in-touch-title {
   font-size: 1.5rem;
   padding: 0px 0px 0px 0px;
-  font-family: "graphikregular";
 }
 @media (max-width: 1200px) {
   .contact-us-txt,

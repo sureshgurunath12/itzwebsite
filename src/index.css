@@ -67,12 +67,12 @@ ul {
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 90px;
 }
 
 @media (max-width: 1199px) {
   main {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 }
 
@@ -80,6 +80,9 @@ main {
 @media (max-width: 767px) {
   main {
     margin-top: 50px;
+  }
+  .hero-container img {
+    height: 150px;
   }
 }
 .hide {
@@ -97,4 +100,8 @@ main {
 }
 a.learnmore-btn:hover {
   color: #ffffff;
+}
+
+.hero-container img {
+  width: 100%;
 }

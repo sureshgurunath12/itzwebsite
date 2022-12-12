@@ -1,7 +1,3 @@
-.hero-container {
-  display: flex;
-  background: url("../../../public/assets/images/Background.png") no-repeat;
-}
 .flex {
   display: flex;
 }
@@ -17,15 +13,80 @@
   font-size: 36px;
   letter-spacing: 0.54px;
   color: #111111;
-  width: 57%;
+  width: 75%;
 }
 .hero-container .hero-description {
-  font-size: 24px;
+  font-size: 1.5rem;
   letter-spacing: 0px;
   color: #000000;
   line-height: 2;
 }
-
+.think-big-txt ul {
+  width: 80%;
+  padding: 0;
+  margin: 20px auto;
+}
+.think-big-txt ul li {
+  background: url("../../../public/assets/images/Bullet_point.png") 0px 0px
+    no-repeat;
+  padding: 8px 10px 20px;
+  list-style: none;
+  font-size: 2rem;
+  padding-left: 32px;
+  background-size: 94px;
+}
+.leadership {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.picture {
+  background: #d9d6c7;
+  border-radius: 50%;
+  width: 328px;
+  height: 328px;
+  margin: 0 auto;
+}
+.name {
+  font-size: 1.75rem;
+  font-family: courierprimebold;
+  margin-top: 10px;
+}
+.posting {
+  padding: 10px 0px 20px;
+}
+.description {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+.leadership1 {
+  background: url("../../../public/assets/images/Leadership1.png") 0px 0px
+    no-repeat;
+  width: 386px;
+  height: 598px;
+  text-align: center;
+  padding: 20px;
+}
+.leadership2 {
+  background: url("../../../public/assets/images/Leadership2.png") 0px 0px
+    no-repeat;
+  width: 386px;
+  height: 598px;
+  text-align: center;
+  padding: 20px;
+}
+.leadership3 {
+  background: url("../../../public/assets/images/Leadership3.png") 0px 0px
+    no-repeat;
+  width: 386px;
+  height: 598px;
+  text-align: center;
+  padding: 20px;
+}
+.leadership-img {
+  padding-left: 30px;
+}
 /* Mobile Device */
 @media (max-width: 767px) {
 }

@@ -4,13 +4,24 @@ footer {
   padding-bottom: 60px;
   color: #fff;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
 }
 footer ul {
   padding: 0;
   margin: 0;
+  display: flex;
 }
 footer ul li {
   list-style: none;
-  margin: 10px;
+  margin: 10px 0px;
+  padding-right: 20px;
+}
+.text-left {
+  text-align: left !important;
+}
+
+.copy-right {
+  color: #a3a5a5;
+  font-size: 1rem;
+  margin-top: 20px;
 }

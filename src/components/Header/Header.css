@@ -1,3 +1,10 @@
+.hero-container,
+.think-big-container,
+.leadership-container,
+.services-container {
+  display: flex;
+  background: url("../../../public/assets/images/Background.png") no-repeat;
+}
 header {
   position: fixed;
   width: 100%;
@@ -5,6 +12,8 @@ header {
   left: 0;
   z-index: 12;
   text-align: center;
+}
+.header-container {
   background-color: #f9f9f9;
 }
 .rel {
@@ -14,10 +23,8 @@ header {
   background: #eee7d9;
   font-size: 14px;
   padding: 5px;
-  font-family: "graphikregular";
 }
 .sticky-header span {
-  font-family: "graphikmedium";
 }
 header .logo-container {
   padding: 15px 10px 15px 80px;
@@ -28,19 +35,18 @@ header .logo-container {
 header .navContainer {
   display: flex;
   justify-content: center;
-  font-family: "graphikmedium";
   font-size: 14px;
-  margin-top: 10px;
-  background-color: #fff;
+  margin-top: 0px;
+  background: #fff;
 }
 header .navContainer .join-us {
   position: absolute;
-  top: 142px;
+  top: 90px;
   right: 30px;
 }
 header nav {
   display: inline-block;
-  margin: 20px auto 60px;
+  margin: 20px auto 0px;
 }
 header nav .model-close {
   display: none;
@@ -54,7 +60,7 @@ header .navigation ul.parent {
 header .navigation ul.parent li {
   list-style-type: none;
   text-transform: uppercase;
-  font-family: "graphikregular";
+
   font-size: 12px;
   letter-spacing: 1px;
 }
@@ -101,12 +107,15 @@ header .navigation ul.parent li a.home.active,
 header .navigation ul.parent li a.home:hover {
   background: url("../../../public/assets/images/Home_hover.png") no-repeat;
 }
+header .navigation ul.parent li a.services.active,
 header .navigation ul.parent li a.services:hover {
   background: url("../../../public/assets/images/Services_hover.png") no-repeat;
 }
+header .navigation ul.parent li a.careers.active,
 header .navigation ul.parent li a.careers:hover {
   background: url("../../../public/assets/images/Careers_hover.png") no-repeat;
 }
+header .navigation ul.parent li a.contactus.active,
 header .navigation ul.parent li a.contactus:hover {
   background: url("../../../public/assets/images/Contactus_hover.png") no-repeat;
 }

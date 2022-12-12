@@ -54,7 +54,6 @@ form .field {
   line-height: 15px;
   text-align: center;
   outline: none;
-  font-family: graphikmedium;
   transition: all 0.5s ease-in;
 }
 .formFields .sub-btn:hover {

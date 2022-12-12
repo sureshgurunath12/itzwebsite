@@ -14,17 +14,32 @@
   display: flex;
   flex-wrap: wrap;
 }
-.careersSection {
-  position: relative;
+.careers-section {
+  width: 80%;
+  margin: 0 auto;
+}
+.opening-links {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  overflow: hidden;
-  margin: 10px 15px 15px 50px;
-  background: #fff;
-  padding-bottom: 30px;
-  width: 100%;
+  justify-content: space-between;
+}
+.careers-section ul {
+  margin-left: 10px;
+}
+.careers-section ul li {
+  background: url("../../../public/assets/images/Bullet_point.png") no-repeat;
+  background-size: 65px 40px;
+  padding: 5px 34px;
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.careers-section ul li:last-child {
+  border-bottom: none;
 }
 .nameBox {
   padding-top: 15px;
+}
+.apply-job {
+  color: #001dd6;
+  text-decoration: underline;
 }

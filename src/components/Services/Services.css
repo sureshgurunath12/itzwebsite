@@ -1,12 +1,15 @@
-.font-italic-txt {
-  font-style: italic;
-  font-size: 1.25rem;
-  padding-bottom: 20px;
+.services-container {
+  margin-top: 130px;
+  font-size: 1.5rem;
+  padding-top: 160px;
 }
-.home-txt {
-  font-size: 1rem;
+.prod-text {
+  width: 50%;
+  padding-left: 150px;
+  text-align: left;
 }
-
-.nameBox {
-  padding-top: 15px;
+.prod-text1 {
+  width: 50%;
+  padding-left: 150px;
+  margin: 0 auto;
 }
