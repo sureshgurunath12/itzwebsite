@@ -11,9 +11,6 @@ function ContactUs({ handler }) {
   }
   return (
     <>
-      <div className="container-fluid hero-container">
-        <img src={Banner} alt="travel_suitcase" />
-      </div>
       <div className="container">
         <div className="row">
           <br />
