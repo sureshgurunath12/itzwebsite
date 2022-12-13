@@ -9,16 +9,16 @@ function Footer() {
             <div className="align-center">
               <ul>
                 <li>
-                  <a href="#">About</a>
+                  <a href="/home">About</a>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <a href="/services">Services</a>
                 </li>
                 <li>
-                  <a href="#">Careers</a>
+                  <a href="/careers">Careers</a>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <a href="/contactus">Contact Us</a>
                 </li>
               </ul>
             </div>

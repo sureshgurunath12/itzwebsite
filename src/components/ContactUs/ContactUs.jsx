@@ -1,6 +1,6 @@
 import React from "react";
 import "../../components/ContactUs/ContactUs.css";
-import { RequestForm } from "../../libs/RequestForm";
+import { ContactUsForm } from "../../libs/ContactUsForm";
 import { isDesktop } from "react-device-detect";
 function ContactUs({ handler }) {
   let Banner = cdnURL + "assets/images/desktopbanner3.png";
@@ -83,11 +83,7 @@ function ContactUs({ handler }) {
             <div className="fields-txt">
               Please fill the below form and send us your queries.
             </div>
-            <RequestForm
-              isProductHidden={true}
-              isPasswordHidden={true}
-              templateId="template_2jrsnqe"
-            />
+            <ContactUsForm templateId="contactus_tempid"/>
           </div>
           <br />
         </div>

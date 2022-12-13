@@ -3,14 +3,14 @@
 }
 
 .fields {
-  width: 100%;
+  width: 70%;
   padding: 20px;
   margin: 0 auto;
   border-radius: 4px;
   font-size: 0.875rem;
 }
 .fields-txt {
-  font-size: 1.875rem;
+  font-size: 1.500rem;
   padding: 10px 0px;
   text-decoration: underline;
 }
