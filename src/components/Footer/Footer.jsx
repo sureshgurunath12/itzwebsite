@@ -6,25 +6,27 @@ function Footer() {
       <div className="footer-container container">
         <div className="row">
           <div className="col-md-12">
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Careers</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-            </ul>
+            <div className="align-center">
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-md-12 text-left copy-right">
+          <div className="col-md-12 text-center copy-right">
             &copy; 2022 iTechnowiZ Solutions. All rights reserved.
           </div>
         </div>

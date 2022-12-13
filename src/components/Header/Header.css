@@ -1,9 +1,8 @@
-.hero-container,
-.think-big-container,
-.leadership-container,
-.services-container {
+.bg-img {
   display: flex;
   background: url("../../../public/assets/images/Background.png") no-repeat;
+  background-attachment: fixed;
+  background-position: 0px 140px;
 }
 header {
   position: fixed;
@@ -24,8 +23,7 @@ header {
   font-size: 14px;
   padding: 5px;
 }
-.sticky-header span {
-}
+
 header .logo-container {
   padding: 15px 10px 15px 80px;
   text-align: left;
@@ -41,8 +39,9 @@ header .navContainer {
 }
 header .navContainer .join-us {
   position: absolute;
-  top: 90px;
+  top: 120px;
   right: 30px;
+  cursor: pointer;
 }
 header nav {
   display: inline-block;

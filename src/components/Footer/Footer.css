@@ -8,8 +8,9 @@ footer {
 }
 footer ul {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
+  width: fit-content;
 }
 footer ul li {
   list-style: none;

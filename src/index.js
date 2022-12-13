@@ -13,10 +13,9 @@ ReactDOM.render(
     <Header />
     <main>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-
         <Route path="/contactus" element={<Contact />} />
-
         <Route path="/careers" element={<Careers />} />
         <Route path="/services" element={<Services />} />
       </Routes>

@@ -1,3 +1,7 @@
+.careers-section {
+  width: 100%;
+  margin: 0 auto;
+}
 .font-italic-txt {
   font-style: italic;
   font-size: 1.25rem;
@@ -6,7 +10,22 @@
 .home-txt {
   font-size: 1rem;
 }
-
+.have-fun {
+  display: flex;
+  margin-top: 30px;
+}
+.have-fun-img {
+  width: 60%;
+}
+.have-fun-txt {
+  width: 40%;
+  padding-top: 110px;
+  padding-left: 20px;
+  font-size: 1.5rem;
+}
+.have-fun-viewall {
+  text-align: right;
+}
 /* Mobile Device */
 @media (max-width: 767px) {
 }
@@ -14,24 +33,26 @@
   display: flex;
   flex-wrap: wrap;
 }
-.careers-section {
-  width: 80%;
-  margin: 0 auto;
-}
+
 .opening-links {
   display: flex;
   justify-content: space-between;
 }
 .careers-section ul {
   margin-left: 10px;
+  width: 80%;
 }
-.careers-section ul li {
+.careers-section ul.careers-lists li {
   background: url("../../../public/assets/images/Bullet_point.png") no-repeat;
   background-size: 65px 40px;
-  padding: 5px 34px;
+  padding: 5px 24px;
   list-style-type: none;
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
+}
+.careers-section ul.careers-lists li:hover,
+.careers-section ul.careers-lists li a:hover {
+  color: #000;
 }
 .careers-section ul li:last-child {
   border-bottom: none;
@@ -42,4 +63,16 @@
 .apply-job {
   color: #001dd6;
   text-decoration: underline;
+}
+.tech-skills-title,
+.work-exp-title {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.tech-skill-lists li,
+.work-exp-lists li {
+  padding: 10px;
+}
+.work-exp-sub-title {
+  color: #111111;
 }

@@ -6,18 +6,21 @@ function HomeContent() {
   const hero = cdnURL + "assets/images/Create_innovate_inspire.png";
   const Think_big = cdnURL + "assets/images/Think_big.png";
   const Leadership_heading = cdnURL + "assets/images/Leadership_heading.png";
+  const Dummy1 = cdnURL + "assets/images/Dummy1.png";
+  const Dummy2 = cdnURL + "assets/images/Dummy2.png";
+  const Dummy3 = cdnURL + "assets/images/Dummy3.png";
 
   if (isDesktop) {
     return (
       <>
         <div className="container-fluid">
-          <div className="hero-container">
+          <div className="hero-container bg-img">
             <div className="container flex">
               <div className="hero-img">
                 <img
                   src={hero}
                   width={805}
-                  height={670}
+                  height={640}
                   alt="travel_suitcase"
                 />
               </div>
@@ -39,12 +42,8 @@ function HomeContent() {
               </div>
             </div>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
           <div className="think-big-container">
-            <div className="container">
+            <div className="container ">
               <div className="think-big-img">
                 <img
                   src={Think_big}
@@ -62,10 +61,7 @@ function HomeContent() {
               </div>
             </div>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
+
           <div className="leadership-container">
             <div className="container">
               <div className="leadership-img">
@@ -78,7 +74,9 @@ function HomeContent() {
               </div>
               <div className="leadership">
                 <div className="leadership1">
-                  <div className="picture"></div>
+                  <div className="picture">
+                    <img src={Dummy1} />
+                  </div>
                   <div className="name">V.M.K. Gopal</div>
                   <div className="posting">President & CEO</div>
                   <div className="description">
@@ -88,7 +86,9 @@ function HomeContent() {
                   </div>
                 </div>
                 <div className="leadership2">
-                  <div className="picture"></div>
+                  <div className="picture">
+                    <img src={Dummy2} />
+                  </div>
                   <div className="name">Kaliappan</div>
                   <div className="posting">Director Technology</div>
                   <div className="description">
@@ -98,7 +98,9 @@ function HomeContent() {
                   </div>
                 </div>
                 <div className="leadership3">
-                  <div className="picture"></div>
+                  <div className="picture">
+                    <img src={Dummy3} />
+                  </div>
                   <div className="name">Siva</div>
                   <div className="posting">Director Quality Assurance</div>
                   <div className="description">

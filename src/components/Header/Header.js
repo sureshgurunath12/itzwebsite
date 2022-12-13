@@ -131,7 +131,9 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <img className="join-us" src={Join_us} alt="Konami" />
+            <a href="#">
+              <img className="join-us" src={Join_us} alt="Konami" />
+            </a>
           </div>
           {showTopBtn && (
             <span className="up-arrow-circle" onClick={scrollToTop}>

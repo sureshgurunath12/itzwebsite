@@ -8,7 +8,7 @@ function Services() {
   const Operations_of_casino =
     cdnURL + "assets/images/Operations_of_casino.png";
   return (
-    <div className="container-fluid services-container">
+    <div className="container-fluid services-container bg-img">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
