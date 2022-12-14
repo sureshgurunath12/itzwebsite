@@ -5,6 +5,7 @@ import "../../src/libs/ContactUsForm.css";
 import emailjs from "@emailjs/browser";
 export const ContactUsForm = (props) => {
   const form = useRef();
+  const recaptchaRef = React.useRef();
   const isFullNameHidden = props?.isFullNameHidden || false;
   const isEmailHidden = props?.isEmailHidden || false;
   const isMobileHidden = props?.isMobileHidden || false;
@@ -82,8 +83,8 @@ export const ContactUsForm = (props) => {
   };
   const onChange = (value) => {
     console.log("Captcha value:", value);
-  };
-  const sendEmail = (e) => {
+  }
+  const sendEmail = async (e) => {
     e.preventDefault();
     setIsSuccess(false);
     setIsDisabled(false);
@@ -105,8 +106,14 @@ export const ContactUsForm = (props) => {
       document.getElementById(messageRef.current.id).focus();
       document.getElementById(messageRef.current.id).blur();
     }
-    if (isDisabled) {
-      console.log(123456789);
+    if (!isMessageHidden) {
+      document.getElementById(messageRef.current.id).focus();
+      document.getElementById(messageRef.current.id).blur();
+    }
+    
+    const recaptchaValue = recaptchaRef.current.getValue();
+
+    if (isDisabled || !recaptchaValue) {
       return;
     } else {
       emailjs
@@ -123,7 +130,7 @@ export const ContactUsForm = (props) => {
             setIsSuccess(false);
           }
         });
-    }
+     }
   };
 
   return (
@@ -251,13 +258,14 @@ export const ContactUsForm = (props) => {
               </div>
             </div>
             <div className="field">
-              <div>
-                <ReCAPTCHA
-                  sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
-                  onChange={onChange}
-                />
-              </div>
-              <input type="submit" className="sub-btn" value="" />
+                <div>
+                  <ReCAPTCHA
+                    sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
+                    onChange={onChange}
+                    ref={recaptchaRef}
+                  />
+                </div>
+              <input type="submit" className="sub-btn" value=""/>
             </div>
           </form>
         </>
