@@ -17,7 +17,11 @@ function Careers() {
                   <div className="job-id">JOB20221109082601</div>
                   <div className="job-title">QA - Test Engineer</div>
                 </div>
-                <div className="job-section-right">Back</div>
+                <div className="job-section-right">
+                  <a href="/careers" className="back-btn">
+                    Back
+                  </a>
+                </div>
               </div>
               <div className="tech-skills">
                 <div className="tech-skills-title">Technical Skills</div>
@@ -50,9 +54,7 @@ function Careers() {
                 <div className="work-exp-sub-title">
                   Please fill the below required detail and submit it.
                 </div>
-                <JobsForm
-                  templateId="jobs_temp"
-                />
+                <JobsForm templateId="jobs_temp" />
               </div>
             </section>
           </div>

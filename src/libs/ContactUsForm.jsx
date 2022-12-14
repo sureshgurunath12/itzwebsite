@@ -83,7 +83,7 @@ export const ContactUsForm = (props) => {
   };
   const onChange = (value) => {
     console.log("Captcha value:", value);
-  }
+  };
   const sendEmail = async (e) => {
     e.preventDefault();
     setIsSuccess(false);
@@ -110,7 +110,7 @@ export const ContactUsForm = (props) => {
       document.getElementById(messageRef.current.id).focus();
       document.getElementById(messageRef.current.id).blur();
     }
-    
+
     const recaptchaValue = recaptchaRef.current.getValue();
 
     if (isDisabled || !recaptchaValue) {
@@ -130,7 +130,7 @@ export const ContactUsForm = (props) => {
             setIsSuccess(false);
           }
         });
-     }
+    }
   };
 
   return (
@@ -257,15 +257,15 @@ export const ContactUsForm = (props) => {
                 ) : null}
               </div>
             </div>
-            <div className="field">
-                <div>
-                  <ReCAPTCHA
-                    sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
-                    onChange={onChange}
-                    ref={recaptchaRef}
-                  />
-                </div>
-              <input type="submit" className="sub-btn" value=""/>
+            <div className="field submit-section">
+              <div>
+                <ReCAPTCHA
+                  sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
+                  onChange={onChange}
+                  ref={recaptchaRef}
+                />
+              </div>
+              <input type="submit" className="sub-btn" value="" />
             </div>
           </form>
         </>

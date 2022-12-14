@@ -1,3 +1,8 @@
+.submit-section {
+  display: flex;
+  justify-content: space-between;
+  width: 60% !important;
+}
 .contact-us-container {
   width: 70%;
 }
@@ -64,6 +69,7 @@ form .field {
   height: 41px;
   transition: 0.6s;
   border: none;
+  margin-top: 10px;
 }
 .formFields .sub-btn:hover {
   background: url("../../public/assets/images/Submit_hover.png") 0px 0px

@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import "../../src/libs/ContactUsForm.css";
 
-
 import emailjs from "@emailjs/browser";
 export const JobsForm = (props) => {
   const form = useRef();
@@ -91,7 +90,7 @@ export const JobsForm = (props) => {
   };
   const onChange = (value) => {
     console.log("Captcha value:", value);
-  }
+  };
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSuccess(false);
@@ -113,7 +112,7 @@ export const JobsForm = (props) => {
       document.getElementById(messageRef.current.id).focus();
       document.getElementById(messageRef.current.id).blur();
     }
-    
+
     const recaptchaValue = recaptchaRef.current.getValue();
 
     if (isDisabled || !recaptchaValue) {
@@ -315,7 +314,7 @@ export const JobsForm = (props) => {
                 ) : null}
               </div>
             </div>
-            <div className="field">
+            <div className="field submit-section">
               <div>
                 <ReCAPTCHA
                   sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
@@ -323,8 +322,11 @@ export const JobsForm = (props) => {
                   ref={recaptchaRef}
                 />
               </div>
-              <input type="submit" className="sub-btn" value=""/>
+              <input type="submit" className="sub-btn" value="" />
             </div>
+            <br />
+            <br />
+            <br />
           </form>
         </>
       )}

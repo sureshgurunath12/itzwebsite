@@ -131,7 +131,7 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <a href="#">
+            <a href="/careers">
               <img className="join-us" src={Join_us} alt="Konami" />
             </a>
           </div>

@@ -13,8 +13,8 @@ function HomeContent() {
   if (isDesktop) {
     return (
       <>
-        <div className="container-fluid">
-          <div className="hero-container bg-img">
+        <div className="container-fluid bg-img">
+          <div className="hero-container">
             <div className="container flex">
               <div className="hero-img">
                 <img
