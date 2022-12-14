@@ -1,0 +1,18 @@
+.job-container {
+  width: 80%;
+  margin: 110px auto 0px;
+}
+
+.tech-skills-title,
+.work-exp-title {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.tech-skill-lists li,
+.work-exp-lists li {
+  padding: 10px;
+  list-style: inside;
+}
+.work-exp-sub-title {
+  color: #111111;
+}

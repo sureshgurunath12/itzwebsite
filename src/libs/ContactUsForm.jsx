@@ -82,7 +82,7 @@ export const ContactUsForm = (props) => {
   };
   const onChange = (value) => {
     console.log("Captcha value:", value);
-  }
+  };
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSuccess(false);
@@ -96,7 +96,7 @@ export const ContactUsForm = (props) => {
       document.getElementById(emailRef?.current.id).focus();
       document.getElementById(emailRef?.current.id).blur();
     }
-   
+
     if (!isMobileHidden) {
       document.getElementById(mobileRef?.current.id).focus();
       document.getElementById(mobileRef?.current.id).blur();
@@ -131,7 +131,7 @@ export const ContactUsForm = (props) => {
       {isSuccess ? (
         <div className="successMess">
           Thanks for submiting the details. <br />
-          Khenshu team will get in touch with you shortly.
+          ITechnoWiz team will get in touch with you shortly.
         </div>
       ) : (
         <>
@@ -193,8 +193,6 @@ export const ContactUsForm = (props) => {
                       </div>
                     </div>
                   ) : null}
-                  
-                 
                 </div>
                 <div className="contact-us-right">
                   {!isMobileHidden ? (
@@ -227,7 +225,6 @@ export const ContactUsForm = (props) => {
                 </div>
               </div>
               <div>
-
                 {!isMessageHidden ? (
                   <div className="field">
                     <div className="text-container">Message</div>
@@ -254,13 +251,13 @@ export const ContactUsForm = (props) => {
               </div>
             </div>
             <div className="field">
-                <div>
-                  <ReCAPTCHA
-                    sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
-                    onChange={onChange}
-                  />
-                </div>
-              <input type="submit" className="sub-btn" value=""/>
+              <div>
+                <ReCAPTCHA
+                  sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
+                  onChange={onChange}
+                />
+              </div>
+              <input type="submit" className="sub-btn" value="" />
             </div>
           </form>
         </>

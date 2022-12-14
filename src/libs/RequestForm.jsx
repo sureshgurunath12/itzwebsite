@@ -141,7 +141,7 @@ export const RequestForm = (props) => {
       {isSuccess ? (
         <div className="successMess">
           Thanks for submiting the details. <br />
-          Khenshu team will get in touch with you shortly.
+          ITechnoWiz team will get in touch with you shortly.
         </div>
       ) : (
         <>

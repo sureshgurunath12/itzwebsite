@@ -64,15 +64,3 @@
   color: #001dd6;
   text-decoration: underline;
 }
-.tech-skills-title,
-.work-exp-title {
-  font-size: 2rem;
-  text-decoration: underline;
-}
-.tech-skill-lists li,
-.work-exp-lists li {
-  padding: 10px;
-}
-.work-exp-sub-title {
-  color: #111111;
-}
