@@ -1,6 +1,6 @@
 import React from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 import "./Job1.css";
+import { RequestForm } from "../../libs/RequestForm";
 import JobsForm from "../../libs/JobsForm";
 function Careers() {
   const Apply_job_heading = cdnURL + "assets/images/Apply_job_heading.png";

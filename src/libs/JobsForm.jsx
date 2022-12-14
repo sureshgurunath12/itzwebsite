@@ -1,9 +1,12 @@
 import React, { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import "../../src/libs/ContactUsForm.css";
 
+
 import emailjs from "@emailjs/browser";
-export const RequestForm = (props) => {
+export const JobsForm = (props) => {
   const form = useRef();
+  const recaptchaRef = React.useRef();
   const prodName = props?.prodName || false;
   const isFullNameHidden = props?.isFullNameHidden || false;
   const isEmailHidden = props?.isEmailHidden || false;
@@ -86,6 +89,9 @@ export const RequestForm = (props) => {
     },
     zoom: 11,
   };
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  }
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSuccess(false);
@@ -99,10 +105,6 @@ export const RequestForm = (props) => {
       document.getElementById(emailRef?.current.id).focus();
       document.getElementById(emailRef?.current.id).blur();
     }
-    if (!isPasswordHidden) {
-      document.getElementById(passwordRef?.current.id).focus();
-      document.getElementById(passwordRef?.current.id).blur();
-    }
     if (!isMobileHidden) {
       document.getElementById(mobileRef?.current.id).focus();
       document.getElementById(mobileRef?.current.id).blur();
@@ -111,11 +113,10 @@ export const RequestForm = (props) => {
       document.getElementById(messageRef.current.id).focus();
       document.getElementById(messageRef.current.id).blur();
     }
-    if (!isProductHidden) {
-      document.getElementById(productRef.current.id).focus();
-      document.getElementById(productRef.current.id).blur();
-    }
-    if (isDisabled) {
+    
+    const recaptchaValue = recaptchaRef.current.getValue();
+
+    if (isDisabled || !recaptchaValue) {
       console.log(123456789);
       return;
     } else {
@@ -199,55 +200,6 @@ export const RequestForm = (props) => {
                         />
                         <div className="error" style={{ color: "red" }}>
                           {emailError ? "Please enter valid email" : ""}
-                        </div>
-                      </div>
-                    </div>
-                  ) : null}
-                  {!isProductHidden ? (
-                    <div className="field">
-                      <div className="inputContainer">
-                        <input
-                          type="text"
-                          name="user_product"
-                          id="product_name"
-                          className="disabled"
-                          placeholder="Product Name"
-                          ref={productRef}
-                          onChange={(e) => {
-                            handleChange(e);
-                          }}
-                          onBlur={(e) => {
-                            handleChange(e);
-                          }}
-                          value={prodName}
-                        />
-                        <div className="error" style={{ color: "red" }}>
-                          {nameError ? "" : ""}
-                        </div>
-                      </div>
-                    </div>
-                  ) : null}
-                  {!isPasswordHidden ? (
-                    <div className="field">
-                      <div className="text-container">Password</div>
-                      <div className="inputContainer">
-                        <input
-                          type="password"
-                          name="user_password"
-                          className="input"
-                          id="user_password"
-                          placeholder="Password"
-                          ref={passwordRef}
-                          onBlur={(e) => {
-                            handleChange(e);
-                          }}
-                          onChange={(e) => {
-                            handleChange(e);
-                          }}
-                          autoComplete="off"
-                        />
-                        <div className="error" style={{ color: "red" }}>
-                          {passwordError ? "Please enter valid password" : ""}
                         </div>
                       </div>
                     </div>
@@ -364,9 +316,14 @@ export const RequestForm = (props) => {
               </div>
             </div>
             <div className="field">
-              <a href="#" type="submit" className="sub-btn" value="Submit">
-                &nbsp;
-              </a>
+              <div>
+                <ReCAPTCHA
+                  sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
+                  onChange={onChange}
+                  ref={recaptchaRef}
+                />
+              </div>
+              <input type="submit" className="sub-btn" value=""/>
             </div>
           </form>
         </>
@@ -375,4 +332,4 @@ export const RequestForm = (props) => {
   );
 };
 
-export default RequestForm;
+export default JobsForm;
