@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import "../../src/libs/ContactUsForm.css";
 
 import emailjs from "@emailjs/browser";
@@ -79,6 +80,9 @@ export const ContactUsForm = (props) => {
     },
     zoom: 11,
   };
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  }
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSuccess(false);
@@ -250,6 +254,12 @@ export const ContactUsForm = (props) => {
               </div>
             </div>
             <div className="field">
+                <div>
+                  <ReCAPTCHA
+                    sitekey="6Lcww3ojAAAAAE81KvJxrUeRoqpuq8ma9-MxsUgU"
+                    onChange={onChange}
+                  />
+                </div>
               <input type="submit" className="sub-btn" value=""/>
             </div>
           </form>
