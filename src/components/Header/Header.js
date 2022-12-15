@@ -33,7 +33,10 @@ function Header() {
     <>
       <header>
         <div className="container-fluid header-container">
-          <div className="container">
+          <div className="container rel">
+            <a className="join-us" href="/careers">
+              <img src={Join_us} alt="Konami" />
+            </a>
             <div className="logo-container">
               <div className="left-logo-container">
                 <div className="nav-bar" onClick={() => setIsOpen(!isOpen)}>
@@ -131,9 +134,6 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <a href="/careers">
-              <img className="join-us" src={Join_us} alt="Konami" />
-            </a>
           </div>
           {showTopBtn && (
             <span className="up-arrow-circle" onClick={scrollToTop}>

@@ -121,7 +121,7 @@ export const JobsForm = (props) => {
     } else {
       emailjs
         .sendForm(
-          "service_vs3dkc2",
+          "service_qpe98ng",
           props?.templateId || "template_uynyb35",
           form.current,
           "e6D1o0Plsbpl1w2d_"
@@ -232,41 +232,13 @@ export const JobsForm = (props) => {
                       </div>
                     </div>
                   ) : null}
-                  {!isMobileHidden ? (
-                    <div className="field">
-                      <div className="text-container">
-                        Choose a Job Category <sup>*</sup>
-                      </div>
-                      <div className="inputContainer">
-                        <select
-                          type="number"
-                          name="user_mobile"
-                          id="user_mobile"
-                          placeholder="Mobile"
-                          ref={mobileRef}
-                          onChange={(e) => {
-                            handleChange(e);
-                          }}
-                          maxLength="9"
-                          onBlur={(e) => {
-                            handleChange(e);
-                          }}
-                        >
-                          <option>1</option>
-                        </select>
-                        <div className="error" style={{ color: "red" }}>
-                          {mobileError ? "Please enter mobile number" : ""}
-                        </div>
-                      </div>
-                    </div>
-                  ) : null}
                 </div>
               </div>
               <div>
                 {!isMessageHidden ? (
                   <div className="field">
                     <div className="text-container">
-                      Attach Resume (.PDF Only) *
+                      Attach Resume (.PDF Only) <sup>*</sup>
                     </div>
                     <div className="inputContainer1">
                       <input

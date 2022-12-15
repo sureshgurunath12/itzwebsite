@@ -37,7 +37,7 @@ header .navContainer {
   background: #fff;
   padding-bottom: 10px;
 }
-header .navContainer .join-us {
+header a.join-us {
   position: absolute;
   top: 120px;
   right: 30px;
@@ -189,12 +189,13 @@ header button.register:hover {
   }
   header nav {
     display: flex;
-    width: 60%;
+    width: 100%;
     background: #000;
     height: 100%;
-    padding-top: 50px;
+    padding-top: 0px;
     position: inherit;
     left: 0;
+    margin: 0px auto 0px;
   }
   header nav .model-close {
     position: absolute;
@@ -251,6 +252,9 @@ header button.register:hover {
     display: none !important;
   }
 }
+.padding0 {
+  padding: 0;
+}
 @keyframes navBar {
   0% {
     height: 0px;
@@ -263,6 +267,16 @@ header button.register:hover {
 }
 
 @media (max-width: 767px) {
+  .bg-img {
+    background-position: 0px 110px;
+    background-size: contain;
+  }
+  header a.join-us {
+    top: 68px;
+  }
+  header a.join-us img {
+    width: 100px;
+  }
   header .logo-container {
     padding: 5px 10px;
   }
