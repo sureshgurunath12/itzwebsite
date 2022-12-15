@@ -6,29 +6,28 @@ import emailjs from "@emailjs/browser";
 export const JobsForm = (props) => {
   const form = useRef();
   const recaptchaRef = React.useRef();
-  const prodName = props?.prodName || false;
   const isFullNameHidden = props?.isFullNameHidden || false;
   const isEmailHidden = props?.isEmailHidden || false;
   const isMobileHidden = props?.isMobileHidden || false;
   const isMessageHidden = props?.isMessageHidden || false;
-  const isProductHidden = props?.isProductHidden || false;
-  const isPasswordHidden = props?.isPasswordHidden || false;
   const isTitle = props?.isTitle || "";
   console.log(isTitle);
 
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
-  const [passwordError, setPasswordError] = useState(false);
+  const [resumeError, setResumeError] = useState(false);
+  const [jobcategoryError, setJobCategoryError] = useState(false);
   const [mobileError, setMobileError] = useState(false);
   const [messageError, setMessageError] = useState(false);
   const [isDisabled, setIsDisabled] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
   const nameRef = useRef();
   const emailRef = useRef();
-  const passwordRef = useRef();
   const mobileRef = useRef();
   const messageRef = useRef();
-  const productRef = useRef();
+  const resumeRef = useRef();
+  const jobcategoryRef = useRef();
+  
 
   const validateEmail = (email) => {
     const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -40,7 +39,9 @@ export const JobsForm = (props) => {
     }
   };
   const handleChange = (e) => {
+
     const name = e.target.name;
+    console.log("Target Name >>", e.target.name)
     if (e.target.name === "user_name") {
       if (e.target.value === "" || e.target.value === null) {
         setNameError(true);
@@ -58,11 +59,21 @@ export const JobsForm = (props) => {
         setMobileError(false);
       }
     }
-    if (e.target.name === "user_password") {
-      if (e.target.value === "" || e.target.value === null) {
-        setPasswordError(true);
+  
+    if (e.target.name === "job_category") {
+      console.log("Target Name >>", e.target.name)
+      console.log("Target Value >>>", e.target.value)
+      if (e.target.value === "Select" || e.target.value === null) {
+        setJobCategoryError(true);
       } else {
-        setPasswordError(false);
+        setJobCategoryError(false);
+      }
+    }
+    if (e.target.name === "user_resume") {
+      if (e.target.value === "" || e.target.value === null) {
+        setResumeError(true);
+      } else {
+        setResumeError(false);
       }
     }
 
@@ -73,7 +84,7 @@ export const JobsForm = (props) => {
         setMessageError(false);
       }
     }
-    if (!nameError || !emailError || !mobileError || !messageError) {
+    if (!nameError || !emailError || !mobileError || !messageError || !resumeError ||  !jobcategoryError) {
       setIsDisabled(false);
     } else {
       setIsDisabled(true);
@@ -112,7 +123,7 @@ export const JobsForm = (props) => {
       document.getElementById(messageRef.current.id).focus();
       document.getElementById(messageRef.current.id).blur();
     }
-
+    
     const recaptchaValue = recaptchaRef.current.getValue();
 
     if (isDisabled || !recaptchaValue) {
@@ -121,10 +132,10 @@ export const JobsForm = (props) => {
     } else {
       emailjs
         .sendForm(
-          "service_vs3dkc2",
-          props?.templateId || "template_uynyb35",
+          "service_qpe98ng",
+          props?.templateId || "jobs_temp",
           form.current,
-          "e6D1o0Plsbpl1w2d_"
+          "pCLrF0tkS5wxlsivM"
         )
         .then((result) => {
           if (result.text === "OK") {
@@ -147,7 +158,7 @@ export const JobsForm = (props) => {
         <>
           <div className="news-title">{isTitle}</div>
 
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} enctype="multipart/form-data" onSubmit={sendEmail}>
             <div className="contact-us-container">
               <div className="contact-us-section">
                 <div className="contact-us-left">
@@ -239,23 +250,28 @@ export const JobsForm = (props) => {
                       </div>
                       <div className="inputContainer">
                         <select
-                          type="number"
-                          name="user_mobile"
-                          id="user_mobile"
+                          name="job_category"
+                          id="job_category"
                           placeholder="Mobile"
-                          ref={mobileRef}
+                          ref={jobcategoryRef}
                           onChange={(e) => {
                             handleChange(e);
                           }}
-                          maxLength="9"
                           onBlur={(e) => {
                             handleChange(e);
                           }}
                         >
-                          <option>1</option>
+                          <option>Select</option>
+                          <option value="Software Engineer">Software Engineer</option>
+                          <option value="Automation Engineer">Automation Engineer</option>
+                          <option value="QA Engineer">QA Engineer</option>
+                          <option value="DBA">DBA</option>
+                          <option value="Oracle DB Developer">Oracle DB Developer</option>
+                          <option value="Mobile Developer">Mobile Developer</option>
+                          <option value="Frontend Engineer">Frontend Engineer</option>
                         </select>
                         <div className="error" style={{ color: "red" }}>
-                          {mobileError ? "Please enter mobile number" : ""}
+                          {jobcategoryError ? "Please select job category" : ""}
                         </div>
                       </div>
                     </div>
@@ -271,10 +287,10 @@ export const JobsForm = (props) => {
                     <div className="inputContainer1">
                       <input
                         type="file"
-                        name="user_message"
-                        id="user_message"
+                        name="user_resume"
+                        id="user_resume"
                         placeholder="No File Choosen"
-                        ref={messageRef}
+                        ref={resumeRef}
                         onChange={(e) => {
                           handleChange(e);
                         }}
@@ -283,7 +299,7 @@ export const JobsForm = (props) => {
                         }}
                       />
                       <div className="error" style={{ color: "red" }}>
-                        {messageError ? "" : ""}
+                        {resumeError ? "" : ""}
                       </div>
                     </div>
                   </div>
