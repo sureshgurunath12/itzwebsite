@@ -17,11 +17,6 @@ header {
 .rel {
   position: relative;
 }
-.sticky-header {
-  background: #eee7d9;
-  font-size: 14px;
-  padding: 5px;
-}
 
 header .logo-container {
   padding: 15px 10px 15px 80px;
@@ -32,7 +27,6 @@ header .logo-container {
 header .navContainer {
   display: flex;
   justify-content: center;
-  font-size: 14px;
   margin-top: 0px;
   background: #fff;
   padding-bottom: 10px;
@@ -41,6 +35,12 @@ header a.join-us {
   position: absolute;
   top: 120px;
   right: 30px;
+  cursor: pointer;
+}
+header a.home-link {
+  position: absolute;
+  top: 120px;
+  left: 30px;
   cursor: pointer;
 }
 header nav {
@@ -59,8 +59,7 @@ header .navigation ul.parent {
 header .navigation ul.parent li {
   list-style-type: none;
   text-transform: uppercase;
-
-  font-size: 12px;
+  font-size: 0.75rem;
   letter-spacing: 1px;
 }
 header .navigation ul.parent li.news-letter {
@@ -71,12 +70,11 @@ header .navigation ul.parent li.news-letter {
   cursor: pointer;
 }
 header .navigation ul.parent li.news-letter span {
-  font-size: 11px;
+  font-size: 0.6875rem;
 }
 header .navigation ul.parent li a {
   text-decoration: none;
   display: block;
-
   color: #111;
   cursor: pointer;
 }
@@ -126,7 +124,7 @@ ul.dropdown-menu {
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
 }
 header .navigation ul.dropdown-menu li {
-  font-size: 12px;
+  font-size: 0.6875rem;
   height: auto;
 }
 header .navigation ul.dropdown-menu li a {
@@ -164,21 +162,7 @@ header .nav-bar {
 header .carousel-indicators {
   z-index: 1 !important;
 }
-header button.register {
-  outline: none;
-  border: none;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 10px;
-  border: 1px solid #eee7d9;
-  font-size: 12px;
-  transition: all 0.3s ease-in-out;
-  white-space: nowrap;
-}
-header button.register:hover {
-  background-color: #c0953e;
-  color: #fff;
-}
+
 .v-center {
   display: flex;
   place-items: center;
@@ -190,7 +174,7 @@ header button.register:hover {
   header nav {
     display: flex;
     width: 100%;
-    background: #000;
+    background: #fff;
     height: 100%;
     padding-top: 0px;
     position: inherit;
@@ -209,7 +193,7 @@ header button.register:hover {
     top: 0px;
     left: -1420px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 1);
     transition: all 0.4s ease-in;
     z-index: 10;
     margin-top: 0;
@@ -219,9 +203,15 @@ header button.register:hover {
   header .navContainer.active {
     left: 0;
     border-top: 1px solid #f8efdd;
+    top: 60px;
+    padding: 30px 10px;
   }
   header .navigation ul.parent li {
     padding: 4px;
+    border-bottom: 1px solid #ccc;
+  }
+  header .navigation ul.parent li:last-child {
+    border-bottom: none;
   }
   header .navigation ul.parent li a {
     text-align: left;
@@ -271,6 +261,12 @@ header button.register:hover {
     background-position: 0px 110px;
     background-size: contain;
   }
+  header a.home-link {
+    top: 68px;
+  }
+  header a.home-link img {
+    width: 100px;
+  }
   header a.join-us {
     top: 68px;
   }
@@ -301,9 +297,6 @@ header button.register:hover {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 767px) {
-  .sticky-header {
-    font-size: 12px;
-  }
 }
 
 /* Large devices (desktops, 992px and up)*/

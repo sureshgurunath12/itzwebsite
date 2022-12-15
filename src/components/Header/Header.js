@@ -6,6 +6,7 @@ import "./Header.css";
 function Header() {
   const Logo = cdnURL + "assets/images/Itz_logo.png";
   const Logo2 = cdnURL + "assets/images/Konamai_logo.png";
+  const Home_link = cdnURL + "assets/images/Home_hover.png";
   const Join_us = cdnURL + "assets/images/Join_us.png";
 
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,9 @@ function Header() {
       <header>
         <div className="container-fluid header-container">
           <div className="container rel">
+            <a className="home-link" href="/home">
+              <img src={Home_link} alt="Konami" />
+            </a>
             <a className="join-us" href="/careers">
               <img src={Join_us} alt="Konami" />
             </a>
