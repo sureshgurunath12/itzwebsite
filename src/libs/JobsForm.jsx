@@ -41,7 +41,6 @@ export const JobsForm = (props) => {
   const handleChange = (e) => {
 
     const name = e.target.name;
-    console.log("Target Name >>", e.target.name)
     if (e.target.name === "user_name") {
       if (e.target.value === "" || e.target.value === null) {
         setNameError(true);
@@ -61,8 +60,6 @@ export const JobsForm = (props) => {
     }
   
     if (e.target.name === "job_category") {
-      console.log("Target Name >>", e.target.name)
-      console.log("Target Value >>>", e.target.value)
       if (e.target.value === "Select" || e.target.value === null) {
         setJobCategoryError(true);
       } else {
@@ -243,46 +240,12 @@ export const JobsForm = (props) => {
                       </div>
                     </div>
                   ) : null}
-                  {!isMobileHidden ? (
-                    <div className="field">
-                      <div className="text-container">
-                        Choose a Job Category <sup>*</sup>
-                      </div>
-                      <div className="inputContainer">
-                        <select
-                          name="job_category"
-                          id="job_category"
-                          placeholder="Mobile"
-                          ref={jobcategoryRef}
-                          onChange={(e) => {
-                            handleChange(e);
-                          }}
-                          onBlur={(e) => {
-                            handleChange(e);
-                          }}
-                        >
-                          <option>Select</option>
-                          <option value="Software Engineer">Software Engineer</option>
-                          <option value="Automation Engineer">Automation Engineer</option>
-                          <option value="QA Engineer">QA Engineer</option>
-                          <option value="DBA">DBA</option>
-                          <option value="Oracle DB Developer">Oracle DB Developer</option>
-                          <option value="Mobile Developer">Mobile Developer</option>
-                          <option value="Frontend Engineer">Frontend Engineer</option>
-                        </select>
-                        <div className="error" style={{ color: "red" }}>
-                          {jobcategoryError ? "Please select job category" : ""}
-                        </div>
-                      </div>
-                    </div>
-                  ) : null}
                 </div>
               </div>
               <div>
-                {!isMessageHidden ? (
                   <div className="field">
                     <div className="text-container">
-                      Attach Resume (.PDF Only) *
+                      Attach Resume (.PDF Only) <sup>*</sup>
                     </div>
                     <div className="inputContainer1">
                       <input
@@ -303,8 +266,6 @@ export const JobsForm = (props) => {
                       </div>
                     </div>
                   </div>
-                ) : null}
-
                 {!isMessageHidden ? (
                   <div className="field">
                     <div className="text-container">Message</div>

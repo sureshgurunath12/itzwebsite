@@ -106,10 +106,6 @@ export const ContactUsForm = (props) => {
       document.getElementById(messageRef.current.id).focus();
       document.getElementById(messageRef.current.id).blur();
     }
-    if (!isMessageHidden) {
-      document.getElementById(messageRef.current.id).focus();
-      document.getElementById(messageRef.current.id).blur();
-    }
 
     const recaptchaValue = recaptchaRef.current.getValue();
 
