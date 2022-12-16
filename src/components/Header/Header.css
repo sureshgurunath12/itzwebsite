@@ -242,22 +242,6 @@ header .carousel-indicators {
   .news-letter {
     display: none !important;
   }
-}
-.padding0 {
-  padding: 0;
-}
-@keyframes navBar {
-  0% {
-    height: 0px;
-    opacity: 0;
-  }
-  100% {
-    height: 100vh;
-    opacity: 1;
-  }
-}
-
-@media (max-width: 767px) {
   .bg-img {
     background-position: 0px 110px;
     background-size: contain;
@@ -298,6 +282,22 @@ header .carousel-indicators {
   header .logo a {
     height: 60px;
   }
+}
+.padding0 {
+  padding: 0;
+}
+@keyframes navBar {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 100vh;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
 }
 
 /* Small devices (landscape phones, 576px and up) */

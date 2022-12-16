@@ -105,7 +105,7 @@
   padding-left: 30px;
 }
 /* Mobile Device */
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .hero-container .hero-txt {
     width: 100%;
     padding-top: 126px;
@@ -115,7 +115,7 @@
   }
   .hero-container .hero-img {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 120px;
   }
   .hero-container img {
     width: 100%;

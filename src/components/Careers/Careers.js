@@ -44,8 +44,13 @@ function Careers() {
               <br />
 
               <div className="careers-lists-section">
-                <div className="career-apply-img">
-                  <img src={Apply_job_heading} width={439} height={181} />
+                <div className="career-apply">
+                  <img
+                    className="career-apply-img"
+                    src={Apply_job_heading}
+                    width={439}
+                    height={181}
+                  />
                 </div>
                 <ul className="careers-lists">
                   <li>
