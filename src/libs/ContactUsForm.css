@@ -97,6 +97,9 @@ form .field {
   font-size: 1.5rem;
 }
 @media (max-width: 1200px) {
+  .contact-us-container {
+    width: 94%;
+  }
   .field .text-container {
     padding: 10px 10px 0px 0px;
   }

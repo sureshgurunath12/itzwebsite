@@ -13,3 +13,22 @@
   padding-left: 150px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1200px) {
+  .services-container {
+    padding-top: 40px;
+  }
+  .prod-text {
+    width: 100%;
+    padding-left: 0px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .prod-img img {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .prod-text1 {
+    width: 100%;
+    padding-left: 0;
+  }
+}

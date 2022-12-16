@@ -10,7 +10,7 @@
   font-size: 0.875rem;
 }
 .fields-txt {
-  font-size: 1.500rem;
+  font-size: 1.5rem;
   padding: 10px 0px;
   text-decoration: underline;
 }
@@ -53,10 +53,13 @@
   padding: 0px 0px 0px 0px;
 }
 @media (max-width: 1200px) {
+  .contactUs-container {
+    margin-top: 40px;
+  }
   .contact-us-txt,
   .fields {
     width: 100%;
-    padding: 25px 15px;
+    padding: 25px 15px 0px;
   }
   .contactNumber {
     margin-top: 10px;

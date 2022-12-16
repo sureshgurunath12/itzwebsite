@@ -7,6 +7,9 @@ function Header() {
   const Logo = cdnURL + "assets/images/Itz_logo.png";
   const Logo2 = cdnURL + "assets/images/Konamai_logo.png";
   const Home_link = cdnURL + "assets/images/Home_hover.png";
+  const Services_link = cdnURL + "assets/images/Services_hover.png";
+  const Careers_link = cdnURL + "assets/images/Careers_hover.png";
+  const Contactus_link = cdnURL + "assets/images/Contactus_hover.png";
   const Join_us = cdnURL + "assets/images/Join_us.png";
 
   const [isOpen, setIsOpen] = useState(false);
@@ -35,12 +38,47 @@ function Header() {
       <header>
         <div className="container-fluid header-container">
           <div className="container rel">
-            <a className="home-link" href="/home">
-              <img src={Home_link} alt="Konami" />
-            </a>
-            <a className="join-us" href="/careers">
-              <img src={Join_us} alt="Konami" />
-            </a>
+            <div className="fixed-header">
+              <a
+                className={classNames(
+                  "home-link",
+                  location.pathname.indexOf("home") == -1 && "d-none"
+                )}
+                href="/home"
+              >
+                <img src={Home_link} alt="Konami" />
+              </a>
+              <a
+                className={classNames(
+                  "home-link",
+                  location.pathname.indexOf("services") == -1 && "d-none"
+                )}
+                href="/services"
+              >
+                <img src={Services_link} alt="Konami" />
+              </a>
+              <a
+                className={classNames(
+                  "home-link",
+                  location.pathname.indexOf("careers") == -1 && "d-none"
+                )}
+                href="/careers"
+              >
+                <img src={Careers_link} alt="Konami" />
+              </a>
+              <a
+                className={classNames(
+                  "home-link",
+                  location.pathname.indexOf("contactus") == -1 && "d-none"
+                )}
+                href="/contactus"
+              >
+                <img src={Contactus_link} alt="Konami" />
+              </a>
+              <a className="join-us" href="/careers">
+                <img src={Join_us} alt="Konami" />
+              </a>
+            </div>
             <div className="logo-container">
               <div className="left-logo-container">
                 <div className="nav-bar" onClick={() => setIsOpen(!isOpen)}>

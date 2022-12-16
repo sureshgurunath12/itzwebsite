@@ -11,7 +11,12 @@ function Careers() {
         <div className="row">
           <div className="col-lg-12">
             <section className="job-container">
-              <img src={Apply_job_heading} width={439} height={181} />
+              <img
+                className="apply-job-img d-none"
+                src={Apply_job_heading}
+                width={439}
+                height={181}
+              />
               <div className="job-section">
                 <div className="job-section-left">
                   <div className="job-id">JOB20221109082601</div>

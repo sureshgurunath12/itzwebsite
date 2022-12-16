@@ -16,7 +16,13 @@ function Services() {
               iTechnowiZ Solutions Private Limited is involved in developing
               products for the Casino Gaming industry
             </div>
-            <img src={product} data-image-width="313" data-image-height="250" />
+            <div className="prod-img">
+              <img
+                src={product}
+                data-image-width="313"
+                data-image-height="250"
+              />
+            </div>
           </div>
         </div>
         <br />
@@ -24,11 +30,13 @@ function Services() {
         <br />
         <div className="row">
           <div className="col-lg-12">
-            <img
-              src={development}
-              data-image-width="313"
-              data-image-height="250"
-            />
+            <div className="prod-img">
+              <img
+                src={development}
+                data-image-width="313"
+                data-image-height="250"
+              />
+            </div>
             <div className="prod-text1">
               iTechnowiZ Solutions Private Limited is involved in developing
               products for the Casino Gaming industry
@@ -44,11 +52,13 @@ function Services() {
               iTechnowiZ Solutions Private Limited is involved in developing
               products for the Casino Gaming industry
             </div>
-            <img
-              src={Operations_of_casino}
-              data-image-width="313"
-              data-image-height="250"
-            />
+            <div className="prod-img">
+              <img
+                src={Operations_of_casino}
+                data-image-width="313"
+                data-image-height="250"
+              />
+            </div>
           </div>
         </div>
       </div>

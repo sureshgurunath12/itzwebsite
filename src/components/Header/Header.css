@@ -31,17 +31,18 @@ header .navContainer {
   background: #fff;
   padding-bottom: 10px;
 }
-header a.join-us {
+header .fixed-header {
   position: absolute;
-  top: 120px;
-  right: 30px;
+  top: 188px;
+  text-align: right;
+  display: block;
+  width: 100%;
+}
+header a.join-us {
   cursor: pointer;
 }
 header a.home-link {
-  position: absolute;
-  top: 120px;
-  left: 30px;
-  cursor: pointer;
+  display: none;
 }
 header nav {
   display: inline-block;
@@ -169,7 +170,7 @@ header .carousel-indicators {
 }
 @media (max-width: 1200px) {
   header {
-    padding: 2px 0px;
+    padding: 0px 0px;
   }
   header nav {
     display: flex;
@@ -261,14 +262,22 @@ header .carousel-indicators {
     background-position: 0px 110px;
     background-size: contain;
   }
+  header .fixed-header {
+    display: flex;
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+    background: #fff;
+  }
   header a.home-link {
-    top: 68px;
+    display: block;
   }
   header a.home-link img {
-    width: 100px;
-  }
-  header a.join-us {
-    top: 68px;
+    width: 120px;
+    margin-top: 10px;
   }
   header a.join-us img {
     width: 100px;

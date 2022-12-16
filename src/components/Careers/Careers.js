@@ -19,11 +19,18 @@ function Careers() {
               <br />
               <br />
               <div className="have-fun">
-                <img className="have-fun-img" src={Careers_havefun} />
+                <img
+                  className="have-fun-img d-none d-md-block"
+                  src={Careers_havefun}
+                />
 
                 <div className="have-fun-txt">
                   iTechnowiZ Solutions Private Limited is involved in developing
                   products for the Casino Gaming industry
+                  <img
+                    className="have-fun-img d-block d-md-none"
+                    src={Careers_havefun}
+                  />
                   <div className="have-fun-viewall">
                     <a href="#">
                       <img src={View_all_jobs} />
@@ -37,7 +44,9 @@ function Careers() {
               <br />
 
               <div className="careers-lists-section">
-                <img src={Apply_job_heading} width={439} height={181} />
+                <div className="career-apply-img">
+                  <img src={Apply_job_heading} width={439} height={181} />
+                </div>
                 <ul className="careers-lists">
                   <li>
                     <a
@@ -50,7 +59,9 @@ function Careers() {
                           Must have 1-2 years of experience
                         </div>
                       </div>
-                      <span className="apply-job">Apply Job</span>
+                      <div className="text-right">
+                        <span className="apply-job">Apply Job</span>
+                      </div>
                     </a>
                   </li>
                   <li>

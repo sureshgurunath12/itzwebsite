@@ -23,11 +23,40 @@ a.back-btn {
   font-size: 2rem;
   text-decoration: underline;
 }
+ul.tech-skill-lists,
+ul.work-exp-lists {
+  margin-left: 10px;
+}
 .tech-skill-lists li,
 .work-exp-lists li {
   padding: 10px;
-  list-style: inside;
+  list-style: outside;
+  font-size: 1.5rem;
 }
 .work-exp-sub-title {
   color: #111111;
+}
+/* Mobile Device */
+@media (max-width: 1200px) {
+  .job-section {
+    margin: 30px 0px 30px;
+  }
+  .job-container {
+    width: 95%;
+    margin: 120px auto 0px;
+  }
+  .job-id {
+    font-size: 2rem;
+  }
+  .job-title {
+    font-size: 2rem;
+  }
+  a.back-btn {
+    font-size: 1.2rem;
+    margin: 9px 0px;
+    display: block;
+  }
+  .contact-us-section {
+    display: block;
+  }
 }
