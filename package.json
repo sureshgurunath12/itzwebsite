@@ -24,6 +24,7 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "5.0.1",
     "react-simple-tabs-component": "^2.1.1",
+    "react-read-more-read-less": "1.0.7",
     "styled-jss": "^2.2.3",
     "typescript": "^4.6.4",
     "util": "^0.12.4",

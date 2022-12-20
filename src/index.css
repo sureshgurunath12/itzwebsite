@@ -88,6 +88,10 @@ main {
     margin-top: 50px;
   }
 }
+.read-more-less--more, .read-more-less--less {
+  color:#001dd6;
+  font-size:16px;
+}
 .hide {
   display: none !important;
 }

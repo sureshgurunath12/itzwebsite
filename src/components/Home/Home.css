@@ -4,7 +4,7 @@
 .hero-container,
 .think-big-container,
 .leadership-container {
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
 }
 .hero-container .hero-img {
   width: 50%;
@@ -81,7 +81,7 @@
   background: url("../../../public/assets/images/Leadership1.png") 0px 0px
     no-repeat;
   width: 386px;
-  height: 598px;
+  /*height: 598px;*/
   text-align: center;
   padding: 20px;
 }

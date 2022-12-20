@@ -1,4 +1,5 @@
 import React from "react";
+import ReactReadMoreReadLess from "react-read-more-read-less";
 import "./Home.css";
 
 function HomeContent() {
@@ -26,6 +27,7 @@ function HomeContent() {
               <img src={hero} width={805} height={640} alt="travel_suitcase" />
             </div>
             <div className="hero-description">
+              
               iTechnowiZ Solutions Private Limited is involved in developing
               products for the Casino Gaming industry and has been set up as an
               extension of Konami Gaming Inc headquartered in Las Vegas, Nevada,
@@ -74,8 +76,16 @@ function HomeContent() {
               <div className="name">V.M.K. Gopal</div>
               <div className="posting">President & CEO</div>
               <div className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit.
+              <ReactReadMoreReadLess
+                  charLimit={200}
+                  readMoreText={"Read more"}
+                  readLessText={"Read less"}
+                  readMoreClassName="read-more-less--more"
+                  readLessClassName="read-more-less--less"
+                >
+                Gopal is the Founder Director of iTechnowiz Solutions Private Limited (iTZ) responsible for setting up and managing the iTZ team, strategizing the growth of iTZ and managing the strategic partnership with Konami Gaming Inc.  He has over twenty five years of proven technical and business experience in the IT industry. He has worked for leading consulting firms and has experience consulting for a number of investor-owned and municipal utilities in the US. He also has experience working as a senior Management Personnel in US Electric Utility companies, driving the adoption of technology, leading critical IT implementations and shaping the IT strategy. 
+                Gopal has a Bachelor's degree in Electrical Engineering, Masters in Computer Science from University of South Florida and completed his Executive MBA from Virginia Tech. 
+              </ReactReadMoreReadLess>
               </div>
             </div>
             <div className="leadership2">
