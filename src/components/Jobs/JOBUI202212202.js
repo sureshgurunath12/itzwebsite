@@ -21,7 +21,7 @@ function Careers(props) {
                 <div className="job-section-left">
                   <div className="job-id">{props?.JobId}</div>
                   <div className="job-title">{props?.JobTitle}</div>
-                </div>
+                 </div>
                 <div className="job-section-right">
                   <a href="/careers" className="back-btn">
                     Back
@@ -32,26 +32,29 @@ function Careers(props) {
                 <div className="tech-skills-title">Technical Skills</div>
                 <ul className="tech-skill-lists">
                   <li>
-                    Understanding of requirements and behavior of the components
+                      Proven knowledge in mobile development, testing, documentation, and deployment. 
                   </li>
                   <li>
-                    Hands-on experience in test automation using Selenium with
-                    python scripting mandatory
+                    Experience with web development and cross-platform mobile development.
                   </li>
                   <li>
-                    Find, report and track errors discovered during the test
-                    execution
+                    Proficient in building responsive web applications with React-Redux
                   </li>
                   <li>
-                    Should be solution oriented and have problem solving
-                    abilities
+                    Thorough understanding and usage of Reactive Programming.
+                  </li>
+                  <li>
+                    Ability to understand business requirements and translate them into technical requirements
+                  </li>
+                  <li>
+                    A knack for benchmarking and optimization
                   </li>
                 </ul>
               </div>
               <div className="work-exp">
                 <div className="work-exp-title">Technical Skills</div>
                 <ul className="work-exp-lists">
-                  <li>1-2 years</li>
+                  <li>5-8 years</li>
                 </ul>
               </div>
               <div className="work-exp">

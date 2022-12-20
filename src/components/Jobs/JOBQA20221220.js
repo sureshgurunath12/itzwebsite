@@ -2,6 +2,7 @@ import React from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./Job1.css";
 import JobsForm from "../../libs/JobsForm";
+const JobId = "JOBQA20221220";
 function Careers(props) {
   const Apply_job_heading = cdnURL + "assets/images/Apply_job_heading.png";
 
@@ -21,7 +22,7 @@ function Careers(props) {
                 <div className="job-section-left">
                   <div className="job-id">{props?.JobId}</div>
                   <div className="job-title">{props?.JobTitle}</div>
-                </div>
+                 </div>
                 <div className="job-section-right">
                   <a href="/careers" className="back-btn">
                     Back
@@ -51,13 +52,13 @@ function Careers(props) {
               <div className="work-exp">
                 <div className="work-exp-title">Technical Skills</div>
                 <ul className="work-exp-lists">
-                  <li>1-2 years</li>
+                  <li>4-8 years</li>
                 </ul>
               </div>
               <div className="work-exp">
                 <div className="work-exp-title">Send your application</div>
                 
-                <JobsForm templateId="jobs_temp" />
+                <JobsForm templateId="jobs_temp" JobId={JobId}  />
               </div>
             </section>
           </div>

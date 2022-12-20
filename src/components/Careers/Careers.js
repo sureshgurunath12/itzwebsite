@@ -32,7 +32,7 @@ function Careers() {
                     src={Careers_havefun}
                   />
                   <div className="have-fun-viewall">
-                    <a href="#">
+                    <a href="#applyjobs">
                       <img src={View_all_jobs} />
                     </a>
                   </div>
@@ -43,7 +43,7 @@ function Careers() {
               <br />
               <br />
 
-              <div className="careers-lists-section">
+              <div className="careers-lists-section" id="applyjobs">
                 <div className="career-apply">
                   <img
                     className="career-apply-img"
@@ -55,13 +55,13 @@ function Careers() {
                 <ul className="careers-lists">
                   <li>
                     <a
-                      href="/careers/jobs/JOB20221109082601"
+                      href="/careers/jobs/JOBQA20221220"
                       className="opening-links"
                     >
                       <div>
-                        <div className="lead">QA - Test Engineer</div>
+                        <div className="lead">QA - Test Automation Engineer</div>
                         <div className="block color-black-five">
-                          Must have 1-2 years of experience
+                          Must have 4-8 years of experience in Automation
                         </div>
                       </div>
                       <div className="text-right">
@@ -71,13 +71,13 @@ function Careers() {
                   </li>
                   <li>
                     <a
-                      href="/careers/jobs/JOB20221109082601"
+                      href="/careers/jobs/JOBUI202212201"
                       className="opening-links"
                     >
                       <div>
-                        <div className="lead">QA - Test Engineer</div>
+                        <div className="lead">UI - UI/UX Developer - I</div>
                         <div className="block color-black-five">
-                          Must have 1-2 years of experience
+                          Must have 3-5 years of experience in Web development.
                         </div>
                       </div>
                       <span className="apply-job">Apply Job</span>
@@ -85,13 +85,13 @@ function Careers() {
                   </li>
                   <li>
                     <a
-                      href="/careers/jobs/JOB20221109082601"
+                      href="/careers/jobs/JOBUI202212202"
                       className="opening-links"
                     >
                       <div>
-                        <div className="lead">QA - Test Engineer</div>
+                        <div className="lead">UI - UI/UX Developer - II</div>
                         <div className="block color-black-five">
-                          Must have 1-2 years of experience
+                          Must have 5-8 years of experience in Web development.
                         </div>
                       </div>
                       <span className="apply-job">Apply Job</span>
@@ -99,13 +99,69 @@ function Careers() {
                   </li>
                   <li>
                     <a
-                      href="/careers/jobs/JOB20221109082601"
+                      href="/careers/jobs/JOBJAVA202212201"
                       className="opening-links"
                     >
                       <div>
-                        <div className="lead">QA - Test Engineer</div>
+                        <div className="lead">Java - Java Developer - I</div>
                         <div className="block color-black-five">
-                          Must have 1-2 years of experience
+                          Must have 3-6 years of experience in Java development
+                        </div>
+                      </div>
+                      <span className="apply-job">Apply Job</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/careers/jobs/JOBJAVA202212202"
+                      className="opening-links"
+                    >
+                      <div>
+                        <div className="lead">Java - Java Developer - II</div>
+                        <div className="block color-black-five">
+                          Must have 6-10 years of experience in Java development
+                        </div>
+                      </div>
+                      <span className="apply-job">Apply Job</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/careers/jobs/JOBPS202212201"
+                      className="opening-links"
+                    >
+                      <div>
+                        <div className="lead">Java - Java Product Support - I</div>
+                        <div className="block color-black-five">
+                          Must have 4-8 years of experience in Java Programming
+                        </div>
+                      </div>
+                      <span className="apply-job">Apply Job</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/careers/jobs/JOBPS202212202"
+                      className="opening-links"
+                    >
+                      <div>
+                        <div className="lead">Java - Java Product Support - II</div>
+                        <div className="block color-black-five">
+                          Must have 8-12 years of experience in Java Programming
+                        </div>
+                      </div>
+                      <span className="apply-job">Apply Job</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/careers/jobs/JOBDB202212201"
+                      className="opening-links"
+                    >
+                      <div>
+                        <div className="lead">Database - Database Developer</div>
+                        <div className="block color-black-five">
+                          Must have 6-8 years of experience in PL/SQL
                         </div>
                       </div>
                       <span className="apply-job">Apply Job</span>

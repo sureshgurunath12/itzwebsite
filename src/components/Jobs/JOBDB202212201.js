@@ -1,8 +1,9 @@
 import React from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import "./Job1.css";
-import { RequestForm } from "../../libs/RequestForm";
 import JobsForm from "../../libs/JobsForm";
-function Careers() {
+import { propTypes } from "react-bootstrap/esm/Image";
+function Careers(props) {
   const Apply_job_heading = cdnURL + "assets/images/Apply_job_heading.png";
 
   return (
@@ -11,48 +12,49 @@ function Careers() {
         <div className="row">
           <div className="col-lg-12">
             <section className="job-container">
-              <img src={Apply_job_heading} width={439} height={181} />
+              <img
+                className="apply-job-img d-none"
+                src={Apply_job_heading}
+                width={439}
+                height={181}
+              />
               <div className="job-section">
                 <div className="job-section-left">
-                  <div className="job-id">JOB20221109082601</div>
-                  <div className="job-title">QA - Test Engineer</div>
+                  <div className="job-id">{props?.JobId}</div>
+                  <div className="job-title">{props?.JobTitle}</div>
                 </div>
-                <div className="job-section-right">Back</div>
+                <div className="job-section-right">
+                  <a href="/careers" className="back-btn">
+                    Back
+                  </a>
+                </div>
               </div>
               <div className="tech-skills">
                 <div className="tech-skills-title">Technical Skills</div>
                 <ul className="tech-skill-lists">
                   <li>
-                    Understanding of requirements and behavior of the components
+                  Good PL/SQL Experience in enterprise class product development.
                   </li>
                   <li>
-                    Hands-on experience in test automation using Selenium with
-                    python scripting mandatory
+                  Performance Analysis and tuning experience
                   </li>
                   <li>
-                    Find, report and track errors discovered during the test
-                    execution
+                  Oracle Advanced Queuing
                   </li>
                   <li>
-                    Should be solution oriented and have problem solving
-                    abilities
+                  Golden Gate Microservices experience preferred.
                   </li>
                 </ul>
               </div>
               <div className="work-exp">
                 <div className="work-exp-title">Technical Skills</div>
                 <ul className="work-exp-lists">
-                  <li>1-2 years</li>
+                  <li>6-8 years</li>
                 </ul>
               </div>
               <div className="work-exp">
                 <div className="work-exp-title">Send your application</div>
-                <div className="work-exp-sub-title">
-                  Please fill the below required detail and submit it.
-                </div>
-                <JobsForm
-                  templateId="jobs_temp"
-                />
+                <JobsForm templateId="jobs_temp" />
               </div>
             </section>
           </div>

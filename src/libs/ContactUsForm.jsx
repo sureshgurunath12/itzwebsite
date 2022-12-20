@@ -130,14 +130,19 @@ export const ContactUsForm = (props) => {
   };
 
   return (
+    <>
+   
     <div className="formFields">
       {isSuccess ? (
         <div className="successMess">
           Thanks for submiting the details. <br />
-          ITechnoWiz team will get in touch with you shortly.
+          iTechnowiZ team will get in touch with you shortly.
         </div>
       ) : (
         <>
+          <div className="fields-txt">
+            Please fill the below form and send us your queries.
+          </div>
           <div className="news-title">{isTitle}</div>
 
           <form ref={form} onSubmit={sendEmail}>
@@ -267,6 +272,7 @@ export const ContactUsForm = (props) => {
         </>
       )}
     </div>
+    </>
   );
 };
 

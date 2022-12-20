@@ -12,7 +12,7 @@ import {
   Home,
   Contact,
   Careers,
-  Job1,
+  Jobs,
   Services,
 } from "./components";
 
@@ -25,7 +25,7 @@ ReactDOM.render(
         <Route path="/home" element={<Home />} />
         <Route path="/contactus" element={<Contact />} />
         <Route path="/careers" element={<Careers />} />
-        <Route path="/careers/jobs/JOB20221109082601" element={<Job1 />} />
+        <Route path="/careers/jobs/:jobid" element={<Jobs />} />
         <Route path="/services" element={<Services />} />
       </Routes>
     </main>

@@ -81,9 +81,6 @@ function ContactUs({ handler }) {
           <br />
           <br />
           <div className="fields">
-            <div className="fields-txt">
-              Please fill the below form and send us your queries.
-            </div>
             <ContactUsForm templateId="contactus_tempid"/>
           </div>
           <br />

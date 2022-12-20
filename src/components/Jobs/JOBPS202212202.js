@@ -21,7 +21,7 @@ function Careers(props) {
                 <div className="job-section-left">
                   <div className="job-id">{props?.JobId}</div>
                   <div className="job-title">{props?.JobTitle}</div>
-                </div>
+                 </div>
                 <div className="job-section-right">
                   <a href="/careers" className="back-btn">
                     Back
@@ -31,32 +31,47 @@ function Careers(props) {
               <div className="tech-skills">
                 <div className="tech-skills-title">Technical Skills</div>
                 <ul className="tech-skill-lists">
-                  <li>
-                    Understanding of requirements and behavior of the components
+                <li>
+                    Java programming knowledge (OO, JVM, reflection, I/O, data structures), Java Swing Programming
                   </li>
                   <li>
-                    Hands-on experience in test automation using Selenium with
-                    python scripting mandatory
+                    Socket programming, Thread programming, TCP/IP stack knowledge
                   </li>
                   <li>
-                    Find, report and track errors discovered during the test
-                    execution
+                    Advance SQL query procedure building, JDBC, Oracle, or other RDBMS, SQLPlus
                   </li>
                   <li>
-                    Should be solution oriented and have problem solving
-                    abilities
+                     Advance knowledge of XML and HTML 5, Linux basics
+                  </li>
+                  <li>
+                     Advance knowledge of XML and HTML 5, Linux basics
+                  </li>
+                  <li>
+                    Performance and monitoring knowledge, Design pattern experience, API design, ORM experience, SOA knowledge
+                  </li>
+                  <li>
+                  Understanding of automation and deployment, Installation / Upgrade experience, Oracle SQL data analysis/troubleshooting.
+                  </li>
+                  <li>
+                  Customer facing position - Ability to speak effectively before groups of customers or employees of organization.
+                  </li>
+                  <li>
+                  Strong oral and written communication skills. A high degree of analytical thinking and problem-solving.
+                  </li>
+                  <li>
+                  A high degree of analytical thinking and problem-solving.
                   </li>
                 </ul>
               </div>
               <div className="work-exp">
                 <div className="work-exp-title">Technical Skills</div>
                 <ul className="work-exp-lists">
-                  <li>1-2 years</li>
+                  <li>8-12 years</li>
                 </ul>
               </div>
               <div className="work-exp">
                 <div className="work-exp-title">Send your application</div>
-                
+               
                 <JobsForm templateId="jobs_temp" />
               </div>
             </section>

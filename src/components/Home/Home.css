@@ -4,7 +4,7 @@
 .hero-container,
 .think-big-container,
 .leadership-container {
-  /*margin-bottom: 100px;*/
+  margin-bottom: 100px;
 }
 .hero-container .hero-img {
   width: 50%;
@@ -17,12 +17,13 @@
 .hero-container .hero-txt {
   width: 50%;
   padding-top: 196px;
+  padding-left: 25px;
 }
 .hero-container .hero-title {
   font-size: 1.75rem;
   letter-spacing: 0px;
   color: #111111;
-  width: 75%;
+  width: 80%;
 }
 .hero-container .hero-description {
   font-size: 1.1rem;
@@ -89,7 +90,7 @@
   background: url("../../../public/assets/images/Leadership2.png") 0px 0px
     no-repeat;
   width: 386px;
-  height: 598px;
+  /*height: 598px;*/
   text-align: center;
   padding: 20px;
 }
@@ -97,7 +98,7 @@
   background: url("../../../public/assets/images/Leadership3.png") 0px 0px
     no-repeat;
   width: 386px;
-  height: 598px;
+  /*height: 598px;*/
   text-align: center;
   padding: 20px;
 }

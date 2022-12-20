@@ -10,8 +10,8 @@ export const JobsForm = (props) => {
   const isEmailHidden = props?.isEmailHidden || false;
   const isMobileHidden = props?.isMobileHidden || false;
   const isMessageHidden = props?.isMessageHidden || false;
+  const isJobCategoryHidden = props?.isJobCategoryHidden || false;
   const isTitle = props?.isTitle || "";
-  console.log(isTitle);
 
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
@@ -58,9 +58,9 @@ export const JobsForm = (props) => {
         setMobileError(false);
       }
     }
-  
+    console.log(e.target.name)
     if (e.target.name === "job_category") {
-      if (e.target.value === "Select" || e.target.value === null) {
+      if (e.target.value === "" || e.target.value === null) {
         setJobCategoryError(true);
       } else {
         setJobCategoryError(false);
@@ -120,6 +120,10 @@ export const JobsForm = (props) => {
       document.getElementById(messageRef.current.id).focus();
       document.getElementById(messageRef.current.id).blur();
     }
+    if (!isJobCategoryHidden) {
+      document.getElementById(jobcategoryRef.current.id).focus();
+      document.getElementById(jobcategoryRef.current.id).blur();
+    }
     
     const recaptchaValue = recaptchaRef.current.getValue();
 
@@ -149,14 +153,18 @@ export const JobsForm = (props) => {
       {isSuccess ? (
         <div className="successMess">
           Thanks for submiting the details. <br />
-          ITechnoWiz team will get in touch with you shortly.
+          iTechnowiZ team will get in touch with you shortly.
         </div>
       ) : (
         <>
+          <div className="work-exp-sub-title">
+            Please fill the below required detail and submit it.
+          </div>
           <div className="news-title">{isTitle}</div>
 
           <form ref={form} enctype="multipart/form-data" onSubmit={sendEmail}>
             <div className="contact-us-container">
+            
               <div className="contact-us-section">
                 <div className="contact-us-left">
                   {!isFullNameHidden ? (
@@ -211,6 +219,29 @@ export const JobsForm = (props) => {
                       </div>
                     </div>
                   ) : null}
+                  <div className="field">
+                    <div className="text-container">
+                      Attach Resume (.PDF Only) <sup>*</sup>
+                    </div>
+                    <div className="inputContainer1">
+                      <input
+                        type="file"
+                        name="user_resume"
+                        id="user_resume"
+                        placeholder="No File Choosen"
+                        ref={resumeRef}
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
+                        onBlur={(e) => {
+                          handleChange(e);
+                        }}
+                      />
+                      <div className="error" style={{ color: "red" }}>
+                        {resumeError ? "" : ""}
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="contact-us-right">
                   {!isMobileHidden ? (
@@ -240,32 +271,67 @@ export const JobsForm = (props) => {
                       </div>
                     </div>
                   ) : null}
+
+
+                {!isJobCategoryHidden ? (
+                    <div className="field">
+                      <div className="text-container">
+                        Job Category<sup>*</sup>
+                      </div>
+                      <div className="inputContainer">
+                        <select 
+                          class="input" 
+                          name="job_category"
+                          id="job_category" 
+                          ref={jobcategoryRef}
+                          onChange={(e) => {
+                            handleChange(e);
+                          }}
+                          onBlur={(e) => {
+                            handleChange(e);
+                          }}
+                        >
+                          <option value="">Select</option>
+                          <option value="QA - Test Engineer">QA - Test Engineer</option>
+                          <option value="Java Developer - I">Java Developer - I</option>
+                          <option value="Java Developer - II">Java Developer - II</option>
+                          <option value="UI/UX Developer - I">UI/UX Developer - I</option>
+                          <option value="UI/UX Developer - II">Java Developer - II</option>
+                          <option value="Java Product Support - I">Java Product Support - I</option>
+                          <option value="Java Product Support - II">Java Product Support - II</option>
+                          <option value="Database Developer">Database Developer</option>
+                          <option value="Mobile Developer">Mobile Developer</option>
+                      </select>
+                        
+                        <div className="error" style={{ color: "red" }}>
+                          {jobcategoryError ? "Please select Job Category" : ""}
+                        </div>
+                      </div>
+                    </div>
+                  ) : null}
+
+
+                    <div className="field">
+                      <div className="text-container">
+                        Job ID
+                      </div>
+                      <div className="inputContainer">
+                        <input
+                          type="text"
+                          className="input readonly"
+                          name="job_id"
+                          id="job_id" 
+                          value={props?.JobId}
+                          readonly
+                        />
+                        
+                      </div>
+                    </div>
+
                 </div>
               </div>
               <div>
-                  <div className="field">
-                    <div className="text-container">
-                      Attach Resume (.PDF Only) <sup>*</sup>
-                    </div>
-                    <div className="inputContainer1">
-                      <input
-                        type="file"
-                        name="user_resume"
-                        id="user_resume"
-                        placeholder="No File Choosen"
-                        ref={resumeRef}
-                        onChange={(e) => {
-                          handleChange(e);
-                        }}
-                        onBlur={(e) => {
-                          handleChange(e);
-                        }}
-                      />
-                      <div className="error" style={{ color: "red" }}>
-                        {resumeError ? "" : ""}
-                      </div>
-                    </div>
-                  </div>
+                  
                 {!isMessageHidden ? (
                   <div className="field">
                     <div className="text-container">Message</div>

@@ -19,9 +19,9 @@ function Careers(props) {
               />
               <div className="job-section">
                 <div className="job-section-left">
-                  <div className="job-id">{props?.JobId}</div>
+                <div className="job-id">{props?.JobId}</div>
                   <div className="job-title">{props?.JobTitle}</div>
-                </div>
+                 </div>
                 <div className="job-section-right">
                   <a href="/careers" className="back-btn">
                     Back
@@ -32,31 +32,30 @@ function Careers(props) {
                 <div className="tech-skills-title">Technical Skills</div>
                 <ul className="tech-skill-lists">
                   <li>
-                    Understanding of requirements and behavior of the components
+                    JAVA or other object oriented programming
                   </li>
                   <li>
-                    Hands-on experience in test automation using Selenium with
-                    python scripting mandatory
+                  Eclipse, Gradle, Java Springboot Microservices, JPA
                   </li>
                   <li>
-                    Find, report and track errors discovered during the test
-                    execution
+                  Oracle SQL, RabbitMQ/Any Message Queue system, BIRT reports,
                   </li>
                   <li>
-                    Should be solution oriented and have problem solving
-                    abilities
+                  XML, JSON, REST API Standards, Docker
+                  </li>
+                  <li>
+                  Experience in functional testing, profiling, and performance tuning.
                   </li>
                 </ul>
               </div>
               <div className="work-exp">
                 <div className="work-exp-title">Technical Skills</div>
                 <ul className="work-exp-lists">
-                  <li>1-2 years</li>
+                  <li>3-6 years</li>
                 </ul>
               </div>
               <div className="work-exp">
                 <div className="work-exp-title">Send your application</div>
-                
                 <JobsForm templateId="jobs_temp" />
               </div>
             </section>

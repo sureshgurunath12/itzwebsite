@@ -6,9 +6,9 @@ function HomeContent() {
   const hero = cdnURL + "assets/images/Create_innovate_inspire.png";
   const Think_big = cdnURL + "assets/images/Think_big.png";
   const Leadership_heading = cdnURL + "assets/images/Leadership_heading.png";
-  const Dummy1 = cdnURL + "assets/images/Dummy1.png";
-  const Dummy2 = cdnURL + "assets/images/Dummy2.png";
-  const Dummy3 = cdnURL + "assets/images/Dummy3.png";
+  const Dummy1 = cdnURL + "assets/images/Gopal.jpeg";
+  const Dummy2 = cdnURL + "assets/images/Kali.jpeg";
+  const Dummy3 = cdnURL + "assets/images/Siva.jpeg";
 
   return (
     <div className="container-fluid bg-img">
@@ -76,7 +76,7 @@ function HomeContent() {
               <div className="name">V.M.K. Gopal</div>
               <div className="posting">President & CEO</div>
               <div className="description">
-              <ReactReadMoreReadLess
+                <ReactReadMoreReadLess
                   charLimit={200}
                   readMoreText={"Read more"}
                   readLessText={"Read less"}
@@ -95,8 +95,15 @@ function HomeContent() {
               <div className="name">Kaliappan</div>
               <div className="posting">Director Technology</div>
               <div className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit.
+              <ReactReadMoreReadLess
+                  charLimit={200}
+                  readMoreText={"Read more"}
+                  readLessText={"Read less"}
+                  readMoreClassName="read-more-less--more"
+                  readLessClassName="read-more-less--less"
+                >
+                  Joined at the inception of the company 04-Jan-2021 as Director-Technology, responsible for planning, architecture, design and development of engineering R & D needs of Konami Gaming Inc. in Mobile App Development, Oracle Database EBR and GoldenGate replication, Reporting solutions. Seasoned expert with microservices architecture based software solutions, CI/CD. Good experience in Casino Management Product solutions in Table Management, Patron Tracking and Online Game Server. Have experience in Inventory management, Document Management domain solutions.
+                </ReactReadMoreReadLess>
               </div>
             </div>
             <div className="leadership3">
