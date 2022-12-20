@@ -5,7 +5,7 @@ import JobsForm from "../../libs/JobsForm";
 import { propTypes } from "react-bootstrap/esm/Image";
 function Careers(props) {
   const Apply_job_heading = cdnURL + "assets/images/Apply_job_heading.png";
-
+  const JobId = props?.JobId;
   return (
     <div className="container-fluid bg-img">
       <div className="container">

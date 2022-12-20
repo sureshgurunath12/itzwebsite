@@ -5,7 +5,7 @@ import JobsForm from "../../libs/JobsForm";
 const JobId = "JOBQA20221220";
 function Careers(props) {
   const Apply_job_heading = cdnURL + "assets/images/Apply_job_heading.png";
-
+  const JobId = props?.JobId;
   return (
     <div className="container-fluid bg-img">
       <div className="container">
@@ -58,7 +58,7 @@ function Careers(props) {
               <div className="work-exp">
                 <div className="work-exp-title">Send your application</div>
                 
-                <JobsForm templateId="jobs_temp" JobId={JobId} JobId={JobId}  />
+                <JobsForm templateId="jobs_temp" JobId={JobId} />
               </div>
             </section>
           </div>

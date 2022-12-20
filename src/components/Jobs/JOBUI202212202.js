@@ -4,7 +4,7 @@ import "./Job1.css";
 import JobsForm from "../../libs/JobsForm";
 function Careers(props) {
   const Apply_job_heading = cdnURL + "assets/images/Apply_job_heading.png";
-
+  const JobId = props?.JobId;
   return (
     <div className="container-fluid bg-img">
       <div className="container">
