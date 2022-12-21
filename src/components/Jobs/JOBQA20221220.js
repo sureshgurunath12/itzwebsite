@@ -24,9 +24,9 @@ function Careers(props) {
                   <div className="job-title">{props?.JobTitle}</div>
                  </div>
                 <div className="job-section-right">
-                  <a href="/careers" className="back-btn">
+                  {/* <a href="/careers" className="back-btn">
                     Back
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="tech-skills">

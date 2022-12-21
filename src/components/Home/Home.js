@@ -113,8 +113,15 @@ function HomeContent() {
               <div className="name">Siva</div>
               <div className="posting">Director Quality Assurance</div>
               <div className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit.
+              <ReactReadMoreReadLess
+                  charLimit={190}
+                  readMoreText={"Read more"}
+                  readLessText={"Read less"}
+                  readMoreClassName="read-more-less--more"
+                  readLessClassName="read-more-less--less"
+                >
+                  A dynamic, goal-oriented gaming enthusiast backed with 20 years of experience in various demanding roles, Sivasankar Balasundaram takes the reins of the Quality at iTechnowiZ Solutions Pvt Ltd. As a kingpin in the organization, he directs all activities concerning quality with a solid strategic vision. As Quality is the bedrock of any discipline, being a passionate tester, he ensures conformity to standards/regulations apropos of gaming laws across geographies in which the organization operates. With a proven track record of inspiring, managing, and mentoring QA teams in diverse locations, Balasundaram applies avant-garde techniques to show software in its true colors across product lines and releases, effectively churning out the best from the resources. With a profound knowledge of high-level architecture & Gaming Protocols having strong know-how of Client-Server, Web, Mainframes, Distributed Systems, Network Protocols & Communications, Balasundaram spearheads the team and brings innovation right off the bat in every walk of quality release. Interestingly he holds a Bachelor's Degree in Civil Engineering from Madurai Kamaraj University.
+                </ReactReadMoreReadLess>
               </div>
             </div>
           </div>
