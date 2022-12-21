@@ -106,13 +106,13 @@ function Header() {
                     </g>
                   </svg>
                 </div>
-                <a href="/" className="left-logo">
+                <a href="/home" className="left-logo">
                   <img src={Logo} alt="travel_suitcase" />
                 </a>
               </div>
 
               <div className="right-logo-container">
-                <a href="/" className="right-logo">
+                <a href="https://www.konamigaming.com/" className="right-logo">
                   <img src={Logo2} alt="Konami" />
                 </a>
               </div>

@@ -163,6 +163,7 @@ export const JobsForm = (props) => {
           <div className="news-title">{isTitle}</div>
 
           <form ref={form} enctype="multipart/form-data" onSubmit={sendEmail}>
+          <input type="hidden" className="readonly" name="job_id" id="job_id" value={props?.JobId} />
             <div className="contact-us-container">
             
               <div className="contact-us-section">
@@ -219,7 +220,7 @@ export const JobsForm = (props) => {
                       </div>
                     </div>
                   ) : null}
-                  <div className="field">
+                  {/* <div className="field">
                     <div className="text-container">
                       Attach Resume (.PDF Only) <sup>*</sup>
                     </div>
@@ -241,8 +242,8 @@ export const JobsForm = (props) => {
                         {resumeError ? "" : ""}
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </div> */}
+                </div> 
                 <div className="contact-us-right">
                   {!isMobileHidden ? (
                     <div className="field">
@@ -279,7 +280,7 @@ export const JobsForm = (props) => {
                         Job Category<sup>*</sup>
                       </div>
                       <div className="inputContainer">
-                        <select 
+                        {/* <select 
                           class="input" 
                           name="job_category"
                           id="job_category" 
@@ -305,13 +306,28 @@ export const JobsForm = (props) => {
                         
                         <div className="error" style={{ color: "red" }}>
                           {jobcategoryError ? "Please select Job Category" : ""}
-                        </div>
+                        </div> */}
+                         <input
+                          type="text"
+                          className="input readonly"
+                          name="job_category"
+                          id="job_category" 
+                          value={props?.JobTitle}
+                          ref={jobcategoryRef}
+                          onChange={(e) => {
+                            handleChange(e);
+                          }}
+                          onBlur={(e) => {
+                            handleChange(e);
+                          }}
+                          readonly
+                        />
                       </div>
                     </div>
                   ) : null}
 
 
-                    <div className="field">
+                    {/* <div className="field">
                       <div className="text-container">
                         Job ID
                       </div>
@@ -325,8 +341,8 @@ export const JobsForm = (props) => {
                           readonly
                         />
                         
-                      </div>
-                    </div>
+                      </div> 
+                      </div> */}
 
                 </div>
               </div>
@@ -334,13 +350,13 @@ export const JobsForm = (props) => {
                   
                 {!isMessageHidden ? (
                   <div className="field">
-                    <div className="text-container">Message</div>
+                    <div className="text-container">Specify your relevent technical skills and experience </div>
                     <div className="inputContainer1">
                       <textarea
                         type="text"
                         name="user_message"
                         id="user_message"
-                        placeholder="Message"
+                        placeholder="Technical Skills"
                         ref={messageRef}
                         onChange={(e) => {
                           handleChange(e);
