@@ -46,8 +46,11 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ffffff;
+  /*color: #ffffff;*/
   text-decoration: none;
+}
+footer .footer-container a:hover {
+  color: #ffffff;
 }
 
 * {

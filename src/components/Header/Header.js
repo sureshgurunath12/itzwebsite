@@ -48,7 +48,7 @@ function Header() {
               >
                 <img src={Home_link} alt="Konami" />
               </a>
-              <a
+              {/* <a
                 className={classNames(
                   "home-link",
                   location.pathname.indexOf("services") == -1 && "d-none"
@@ -56,7 +56,7 @@ function Header() {
                 href="/services"
               >
                 <img src={Services_link} alt="Konami" />
-              </a>
+              </a> */}
               <a
                 className={classNames(
                   "home-link",
@@ -112,7 +112,7 @@ function Header() {
               </div>
 
               <div className="right-logo-container">
-                <a href="https://www.konamigaming.com/" className="right-logo">
+                <a href="https://www.konami.com/gaming/Home.html" target="_blank" className="right-logo">
                   <img src={Logo2} alt="Konami" />
                 </a>
               </div>
@@ -138,7 +138,7 @@ function Header() {
                     &nbsp;
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     className={classNames(
                       "menu",
@@ -149,7 +149,7 @@ function Header() {
                   >
                     &nbsp;
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     className={classNames(

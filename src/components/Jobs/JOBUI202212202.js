@@ -58,9 +58,7 @@ function Careers(props) {
                 </ul>
               </div>
               <div className="work-exp">
-                <div className="work-exp-title">Send your application</div>
-                
-                <JobsForm templateId="jobs_temp" JobId={JobId} JobTitle={props?.JobTitle} />
+               <JobsForm templateId="jobs_temp" JobId={JobId} JobTitle={props?.JobTitle} />
               </div>
             </section>
           </div>

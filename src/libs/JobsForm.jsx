@@ -58,7 +58,6 @@ export const JobsForm = (props) => {
         setMobileError(false);
       }
     }
-    console.log(e.target.name)
     if (e.target.name === "job_category") {
       if (e.target.value === "" || e.target.value === null) {
         setJobCategoryError(true);
@@ -99,6 +98,10 @@ export const JobsForm = (props) => {
   const onChange = (value) => {
     console.log("Captcha value:", value);
   };
+  const handleMaxLength = (e) => {
+    if(e.target.value.length==10) return false;
+  };
+  
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSuccess(false);
@@ -128,7 +131,6 @@ export const JobsForm = (props) => {
     const recaptchaValue = recaptchaRef.current.getValue();
 
     if (isDisabled || !recaptchaValue) {
-      console.log(123456789);
       return;
     } else {
       emailjs
@@ -157,6 +159,7 @@ export const JobsForm = (props) => {
         </div>
       ) : (
         <>
+          <div className="work-exp-title">Send your application</div>
           <div className="work-exp-sub-title">
             Please fill the below required detail and submit it.
           </div>
@@ -261,9 +264,12 @@ export const JobsForm = (props) => {
                           onChange={(e) => {
                             handleChange(e);
                           }}
-                          maxLength="9"
+                          maxLength="10"
                           onBlur={(e) => {
                             handleChange(e);
+                          }}
+                          onKeyPress={(e) => {
+                            handleMaxLength(e)
                           }}
                         />
                         <div className="error" style={{ color: "red" }}>

@@ -25,9 +25,7 @@ function Careers() {
                 />
 
                 <div className="have-fun-txt">
-                  iTechnowiZ Solutions Private Limited is involved in developing
-                  products for the Casino Gaming industry
-                  <img
+                   iTechnowiZ Solutions is pioneering the industry with the right mix of talents. Our work culture furthers innovation that provides world-class design and experience in the gaming enterprise management systems.                  <img
                     className="have-fun-img d-block d-md-none"
                     src={Careers_havefun}
                   />
