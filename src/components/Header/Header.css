@@ -36,7 +36,8 @@ header .fixed-header {
   top: 188px;
   text-align: right;
   display: block;
-  width: 100%;
+ /* width: 100%;*/ 
+  right:0;
 }
 header a.join-us {
   cursor: pointer;

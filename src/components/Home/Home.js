@@ -3,12 +3,12 @@ import ReactReadMoreReadLess from "react-read-more-read-less";
 import "./Home.css";
 
 function HomeContent() {
-  const hero = cdnURL + "assets/images/Create_innovate_inspire.png";
-  const Think_big = cdnURL + "assets/images/Think_big.png";
-  const Leadership_heading = cdnURL + "assets/images/Leadership_heading.png";
-  const Dummy1 = cdnURL + "assets/images/Gopal.jpeg";
-  const Dummy2 = cdnURL + "assets/images/Kali.jpeg";
-  const Dummy3 = cdnURL + "assets/images/Siva.jpeg";
+  const hero = cdnURL + "assets/images/Create_innovate_inspire-min.png";
+  const Think_big = cdnURL + "assets/images/Think_big-min.png";
+  const Leadership_heading = cdnURL + "assets/images/Leadership_heading-min.png";
+  const Dummy1 = cdnURL + "assets/images/Gopal-min.jpeg";
+  const Dummy2 = cdnURL + "assets/images/Kali-min.jpeg";
+  const Dummy3 = cdnURL + "assets/images/Siva-min.jpeg";
 
   return (
     <div className="container-fluid bg-img">

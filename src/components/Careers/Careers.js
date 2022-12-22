@@ -2,9 +2,9 @@ import React from "react";
 import "./Careers.css";
 
 function Careers() {
-  const Apply_job_heading = cdnURL + "assets/images/Apply_job_heading.png";
-  const Careers_havefun = cdnURL + "assets/images/Careers_havefun.png";
-  const View_all_jobs = cdnURL + "assets/images/View_all_jobs.png";
+  const Apply_job_heading = cdnURL + "assets/images/Apply_job_heading-min.png";
+  const Careers_havefun = cdnURL + "assets/images/Careers_havefun-min.png";
+  const View_all_jobs = cdnURL + "assets/images/View_all_jobs-min.png";
 
   return (
     <div className="container-fluid bg-img">
