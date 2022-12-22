@@ -98,10 +98,6 @@ export const JobsForm = (props) => {
   const onChange = (value) => {
     console.log("Captcha value:", value);
   };
-  const handleMaxLength = (e) => {
-    if(e.target.value.length==10) return false;
-  };
-  
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSuccess(false);
@@ -268,9 +264,7 @@ export const JobsForm = (props) => {
                           onBlur={(e) => {
                             handleChange(e);
                           }}
-                          onKeyPress={(e) => {
-                            handleMaxLength(e)
-                          }}
+                          onInput={(e) => e.target.value = e.target.value.slice(0, 10)}
                         />
                         <div className="error" style={{ color: "red" }}>
                           {mobileError ? "Please enter mobile number" : ""}

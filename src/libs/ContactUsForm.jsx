@@ -219,10 +219,11 @@ export const ContactUsForm = (props) => {
                           onChange={(e) => {
                             handleChange(e);
                           }}
-                          maxLength="9"
+                          maxLength="10"
                           onBlur={(e) => {
                             handleChange(e);
                           }}
+                          onInput={(e) => e.target.value = e.target.value.slice(0, 10)}
                         />
                         <div className="error" style={{ color: "red" }}>
                           {mobileError ? "Please enter mobile number" : ""}

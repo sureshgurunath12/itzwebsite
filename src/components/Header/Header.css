@@ -251,10 +251,11 @@ header .carousel-indicators {
     position: absolute;
     top: 56px;
     left: 0px;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
     padding-top: 10px;
     background: #fff;
+    right:0;
   }
   header a.home-link {
     display: block;
