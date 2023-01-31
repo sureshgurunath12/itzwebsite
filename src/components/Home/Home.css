@@ -1,10 +1,10 @@
 .flex {
   display: flex;
 }
-.hero-container,
 .think-big-container,
 .leadership-container {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .hero-container .hero-img {
   width: 50%;

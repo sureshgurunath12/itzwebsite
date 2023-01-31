@@ -146,8 +146,9 @@ header .left-logo-container {
   display: flex;
 }
 header .right-logo-container {
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: right;
+  padding-bottom: 15px;
 }
 header .right-logo {
   display: block;

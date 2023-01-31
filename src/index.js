@@ -14,6 +14,7 @@ import {
   Careers,
   Jobs,
   Services,
+  Leaders
 } from "./components";
 
 ReactDOM.render(
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/leaders" element={<Leaders />} />
         <Route path="/contactus" element={<Contact />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/careers/jobs/:jobid" element={<Jobs />} />

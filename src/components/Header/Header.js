@@ -60,6 +60,15 @@ function Header() {
               <a
                 className={classNames(
                   "home-link",
+                  location.pathname.indexOf("leaders") == -1 && "d-none"
+                )}
+                href="/leaders"
+              >
+                <img src={Services_link} alt="Konami" />
+              </a>
+              <a
+                className={classNames(
+                  "home-link",
                   location.pathname.indexOf("careers") == -1 && "d-none"
                 )}
                 href="/careers"
@@ -150,6 +159,18 @@ function Header() {
                     &nbsp;
                   </a>
                 </li> */}
+                <li>
+                  <a
+                    className={classNames(
+                      "menu",
+                      "services",
+                      location.pathname.indexOf("leaders") != -1 && "active"
+                    )}
+                    href="/leaders"
+                  >
+                    &nbsp;
+                  </a>
+                </li>
                 <li>
                   <a
                     className={classNames(
