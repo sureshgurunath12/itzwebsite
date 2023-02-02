@@ -16,3 +16,26 @@
   margin: 0 auto;
   padding: 20px;
 }
+
+.picture img {
+  border: 12px solid #d9d6c7;
+  border-radius: 50%;
+  width: 328px;
+  height: 328px;
+  margin: 0 auto;
+}
+
+/* Mobile Device */
+@media (max-width: 1200px) {
+  .leadership {
+    display: block;
+    padding: 0;
+  }
+  .picture img {
+    width: 250px;
+    height: 250px;
+  }
+  .description {
+    padding: 0px;
+  }
+}

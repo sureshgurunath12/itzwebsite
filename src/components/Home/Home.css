@@ -42,14 +42,6 @@
   background-size: 94px;
 }
 
-.picture img {
-  border: 12px solid #d9d6c7;
-  border-radius: 50%;
-
-  width: 328px;
-  height: 328px;
-  margin: 0 auto;
-}
 .name {
   font-size: 1.75rem;
   font-family: courierprimebold;

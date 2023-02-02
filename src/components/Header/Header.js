@@ -70,7 +70,7 @@ function Header() {
                 )}
                 href="/leaders"
               >
-                <img src={Services_link} alt="Konami" />
+                <img src={Leadership_link} alt="Konami" />
               </a>
               <a
                 className={classNames(
@@ -167,7 +167,7 @@ function Header() {
                   </a>
                 </li>
 
-                {/* <li>
+                <li>
                   <a
                     className={classNames(
                       "menu",
@@ -178,12 +178,12 @@ function Header() {
                   >
                     &nbsp;
                   </a>
-                </li> */}
+                </li>
                 <li>
                   <a
                     className={classNames(
                       "menu",
-                      "services",
+                      "leaders",
                       location.pathname.indexOf("leaders") != -1 && "active"
                     )}
                     href="/leaders"
