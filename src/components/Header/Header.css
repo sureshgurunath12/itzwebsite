@@ -36,8 +36,8 @@ header .fixed-header {
   top: 188px;
   text-align: right;
   display: block;
- /* width: 100%;*/ 
-  right:0;
+  /* width: 100%;*/
+  right: 0;
 }
 header a.join-us {
   cursor: pointer;
@@ -89,6 +89,10 @@ header .navigation ul.parent li a.menu {
 header .navigation ul.parent li a.home {
   background: url("../../../public/assets/images/Home.png") no-repeat;
   width: 133px;
+}
+header .navigation ul.parent li a.leaders {
+  background: url("../../../public/assets/images/Leadership.png") no-repeat;
+  width: 161px;
 }
 header .navigation ul.parent li a.services {
   background: url("../../../public/assets/images/Services.png") no-repeat;
@@ -257,7 +261,7 @@ header .carousel-indicators {
     justify-content: space-between;
     padding-top: 10px;
     background: #fff;
-    right:0;
+    right: 0;
   }
   header a.home-link {
     display: block;

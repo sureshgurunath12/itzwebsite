@@ -1,73 +1,18 @@
-.leaders-container {
-  margin-top: 180px;
+.leadership-container {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-
-.fields {
-  width: 70%;
+.leadership-img {
+  padding-left: 30px;
+}
+.leadership {
+  text-align: center;
   padding: 20px;
-  margin: 0 auto;
-  border-radius: 4px;
-  font-size: 0.875rem;
+  display: flex;
 }
-.fields-txt {
-  font-size: 1.5rem;
-  padding: 10px 0px;
-  text-decoration: underline;
-}
-.contact-us-txt {
-  width: 100%;
-  margin: 0 auto;
+.description {
   text-align: left;
-}
-.contact-us-txt .fields {
-  border: none;
-  box-shadow: none;
-  padding: 20px 0px 0px;
-}
-
-.upperCase {
-  text-transform: uppercase;
-}
-.contactNumber svg {
-  margin-right: 10px;
-}
-.contactNumber .text-right {
-  margin-bottom: 10px;
-}
-.text-right {
-  text-align: right;
-}
-.our-store {
-  margin-bottom: 10px;
-}
-.contact-us-txt .fields {
   width: 100%;
-}
-.map-container {
-  border: 1px solid #ccc;
-  width: 100%;
-  margin-top: 0px;
-}
-.get-in-touch-title {
-  font-size: 1.5rem;
-  padding: 0px 0px 0px 0px;
-}
-@media (max-width: 1200px) {
-  .contactUs-container {
-    margin-top: 40px;
-  }
-  .contact-us-txt,
-  .fields {
-    width: 100%;
-    padding: 25px 15px 0px;
-  }
-  .contactNumber {
-    margin-top: 10px;
-  }
-  .fields .container-fluid {
-    padding: 0px;
-  }
-  .map-container iframe {
-    height: 320px;
-  }
+  margin: 0 auto;
+  padding: 20px;
 }

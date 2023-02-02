@@ -14,7 +14,7 @@ import {
   Careers,
   Jobs,
   Services,
-  Leaders
+  Leaders,
 } from "./components";
 
 ReactDOM.render(

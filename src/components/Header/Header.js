@@ -11,6 +11,7 @@ function Header() {
   const Careers_link = cdnURL + "assets/images/Careers_hover.png";
   const Contactus_link = cdnURL + "assets/images/Contactus_hover.png";
   const Join_us = cdnURL + "assets/images/Join_us.png";
+  const Leadership_link = cdnURL + "assets/images/Leadership_hover.png";
 
   const [isOpen, setIsOpen] = useState(false);
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -42,7 +43,12 @@ function Header() {
               <a
                 className={classNames(
                   "home-link",
-                  location.pathname.indexOf("home") == -1 && "d-none"
+                  location.pathname.indexOf("home") == -1 && "d-none",
+                  location.pathname.indexOf("home") == -1 &&
+                    location.pathname.indexOf("services") == -1 &&
+                    location.pathname.indexOf("careers") == -1 &&
+                    location.pathname.indexOf("contactus") == -1 &&
+                    "d-none"
                 )}
                 href="/home"
               >
@@ -63,6 +69,15 @@ function Header() {
                   location.pathname.indexOf("leaders") == -1 && "d-none"
                 )}
                 href="/leaders"
+              >
+                <img src={Services_link} alt="Konami" />
+              </a>
+              <a
+                className={classNames(
+                  "home-link",
+                  location.pathname.indexOf("services") == -1 && "d-none"
+                )}
+                href="/services"
               >
                 <img src={Services_link} alt="Konami" />
               </a>
@@ -100,9 +115,9 @@ function Header() {
                   >
                     <g
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       <g
                         transform="translate(-320.000000, -38.000000)"
@@ -121,7 +136,11 @@ function Header() {
               </div>
 
               <div className="right-logo-container">
-                <a href="https://www.konami.com/gaming/Home.html" target="_blank" className="right-logo">
+                <a
+                  href="https://www.konami.com/gaming/Home.html"
+                  target="_blank"
+                  className="right-logo"
+                >
                   <img src={Logo2} alt="Konami" />
                 </a>
               </div>
@@ -147,6 +166,7 @@ function Header() {
                     &nbsp;
                   </a>
                 </li>
+
                 {/* <li>
                   <a
                     className={classNames(
